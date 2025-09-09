@@ -1,0 +1,860 @@
+/* -----------------------------  Design Tokens  ---------------------------- */
+:root{
+  --brand:#2418b8;
+  --brand-2:#2c2ccf;
+  --accent:#ffd60a;
+  --dark:#0f1436;
+  --text:#0f172a;
+  --muted:#64748b;
+  --bg:#f8fafc;
+  --card:#ffffff;
+
+  --radius:18px;
+  --shadow:0 10px 30px rgba(0,0,0,.08);
+  --max:1100px;
+}
+
+/* -------------------------------  Base Reset  ---------------------------- */
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  color:var(--text);
+  background:var(--bg);
+  line-height:1.5;
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block;height:auto}
+
+/* Focus styles for keyboard users */
+:where(a,button,[role="button"],.chip,.menu a,.hamb,.btn):focus-visible{
+  outline:3px solid var(--accent);
+  outline-offset:2px;
+  border-radius:12px;
+}
+
+/* Reduced motion: prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce){
+  *{animation:none !important;transition:none !important;scroll-behavior:auto !important}
+}
+
+/* -------------------------------  Layout Utils  -------------------------- */
+.container{width:min(var(--max),92%);margin-inline:auto}
+.section{scroll-margin-top:80px}
+
+/* ---------------------------------  Navbar  ------------------------------ */
+.nav{
+  position:sticky;top:0;z-index:50;
+  background:linear-gradient(90deg,var(--brand),var(--brand-2));
+  color:#fff;
+}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+.logo{display:flex;align-items:center;gap:10px}
+.logo-star{
+  width:28px;height:28px;border:2px solid var(--accent);border-radius:50%;
+  display:grid;place-items:center;color:var(--accent);font-weight:800
+}
+.brand-wrap{line-height:1}
+.brand{font-weight:900;letter-spacing:.2px;font-size:clamp(18px,4.5vw,22px)}
+.sub{font-size:12px;letter-spacing:.5px;opacity:.95}
+.menu{display:flex;gap:16px}
+.menu a{color:#fff;opacity:.95;font-weight:600}
+.hamb{display:none;background:transparent;border:0;color:#fff;font-size:28px;cursor:pointer}
+.nav-actions{display:flex;gap:10px}
+
+/* ---------------------------------  Buttons  ----------------------------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:12px 16px;border-radius:999px;font-weight:800;border:0;cursor:pointer;
+  transition:.2s box-shadow,.2s transform;
+  touch-action:manipulation;
+}
+.btn:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(0,0,0,.15)}
+.btn:active{transform:translateY(0)}
+.btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.5)}
+.btn-primary{background:#fff;color:var(--brand)}
+
+/* ----------------------------------  Hero  ------------------------------- */
+.hero{background:var(--card)}
+.hero-inner{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;padding:24px 0}
+.headband{
+  background:linear-gradient(90deg,var(--brand),var(--brand-2));
+  color:#fff;border-radius:var(--radius);padding:18px 18px 16px;
+  display:flex;flex-direction:column;gap:6px;box-shadow:var(--shadow)
+}
+.headband h1{margin:0;font-size:clamp(22px,5vw,34px);font-weight:900}
+.headband small{opacity:.95}
+.billboard{
+  position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:16/9
+}
+.billboard img{width:100%;height:100%;object-fit:cover;filter:saturate(1.05)}
+
+.billboard .slides { position: absolute; inset: 0; }       /* <- ΝΕΟ / ΣΗΜΑΝΤΙΚΟ */
+
+.billboard .slide{
+  position: absolute; inset: 0; width: 100%; height: 100%; /* <- height:100% */
+  object-fit: cover; opacity: 0; transition: opacity .6s ease;
+}
+
+.billboard .slide.active{ opacity: 1; }
+.billboard::before{ /* κρατά αναλογία 16:9 για σταθερό layout πριν φορτώσουν οι εικόνες */
+  content:""; display:block; aspect-ratio:16 / 9;
+}
+
+/* Προαιρετικά: κουμπιά */
+.bb-prev,.bb-next{
+  position:absolute; top:50%; transform:translateY(-50%);
+  background:rgba(15,23,42,.55); color:#fff; border:0; width:40px; height:40px;
+  border-radius:999px; font-size:22px; line-height:40px; text-align:center;
+  cursor:pointer; backdrop-filter:saturate(120%) blur(2px);
+}
+.bb-prev{ left:10px } .bb-next{ right:10px }
+.bb-prev:hover,.bb-next:hover{ background:rgba(15,23,42,.8) }
+
+/* Αν ο χρήστης έχει reduced motion, κόβουμε τα auto transitions */
+@media (prefers-reduced-motion: reduce){
+  .billboard .slide{ transition:none }
+}
+
+
+
+
+
+
+.badge{
+  position:absolute;left:12px;bottom:12px;background:var(--accent);color:#000;
+  font-weight:900;padding:10px 14px;border-radius:14px;
+  box-shadow:0 8px 24px rgba(0,0,0,.2);font-size:clamp(14px,3.2vw,18px)
+}
+
+/* ------------------------------  Product Grid  --------------------------- */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 14px}
+.chip{
+  background:#eef2ff;border:1px dashed #c7c9ff;border-radius:999px;
+  padding:10px 12px;font-weight:700;font-size:14px;cursor:pointer
+}
+.chip.active{background:#e0e7ff}
+
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+
+.card{
+  background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);
+  overflow:hidden;display:flex;flex-direction:column
+}
+.card img{aspect-ratio:4/3;object-fit:cover}
+.p{padding:14px}
+.card h3{margin:0 0 6px;font-size:18px}
+.meta{font-size:13px;color:var(--muted)}
+.price{display:flex;align-items:baseline;gap:8px}
+.price s{color:var(--muted);font-size:14px}
+.price b{font-size:20px}
+.sku{ font-size:10px; margin:2px 0 6px; }
+.buy{margin-top:12px;display:flex;gap:8px}
+.buy .btn{flex:1}
+
+/* -------------------------------  Services Strip  ------------------------ */
+.strip{
+  margin-block:24px;
+
+  background:var(--card);border-radius:var(--radius);
+  box-shadow:var(--shadow);padding:12px
+}
+.strip ul{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:10px;
+  margin:0;padding:0;list-style:none
+}
+.service-chip{
+  background:#f3f4ff;border:1px dashed #c7c9ff;border-radius:12px;
+  padding:14px 12px;text-align:center;font-weight:700
+}
+
+/* ----------------------------------  About  ------------------------------ */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-block:28px}
+.box{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px}
+.about h2{margin:0 0 8px}
+
+/* ----------------------------------  Brands  ----------------------------- */
+.brands{display:grid;grid-template-columns:repeat(8,1fr);gap:10px}
+.brand-box{
+  background:#ffffff;border:1px solid #e5e7eb;border-radius:12px;
+  display:grid;place-items:center;height:62px
+}
+
+/* ----------------------------------  Reviews  ---------------------------- */
+.reviews{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;}
+.review{background:#fff;border:1px solid #eef1f6;border-radius:16px;padding:16px}
+.stars{letter-spacing:2px;color:#f59e0b}
+
+/* ------------------------------------  FAQ  ------------------------------ */
+.faq details{background:#fff;border-radius:14px;box-shadow:var(--shadow);padding:12px;margin-bottom:10px}
+.faq summary{font-weight:800;cursor:pointer}
+
+/* ---------------------------------  Contact  ----------------------------- */
+.contact{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;margin-block:24px}
+.list{margin:0;padding:0;list-style:none}
+.list li{padding:12px 0;border-bottom:1px solid #eef1f6}
+.list b{display:block}
+iframe{border:0;border-radius:12px;width:100%;height:320px}
+
+/* ------------------------------------  CTA  ------------------------------ */
+.cta{display:flex;justify-content:center;margin:18px 0 34px}
+.btn-big{
+  background:var(--brand);
+  color:#fff;
+  padding:14px 22px;
+  border-radius:14px;
+  font-weight:900;
+  font-size:18px
+}
+
+/* -----------------------------------  Footer  ---------------------------- */
+footer{
+  background:linear-gradient(90deg,var(--brand),var(--brand-2));
+  color:#fff;margin-top:30px
+}
+footer .container{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 0;gap:12px
+}
+footer small{opacity:.9}
+
+/*----------------------------------- Site Footer ----------------------------------- */
+.site-footer{
+  background:var(--dark);
+  color:#fff;
+  padding:26px 0 18px;
+  margin-top:32px;
+}
+.site-footer a{color:#fff;text-decoration:none}
+.site-footer a:hover{text-decoration:underline}
+
+.footer-top{padding-bottom:10px}
+.footer-contacts{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
+  align-items:start;
+}
+.fc h3{
+  margin:0 0 8px;
+  font-size:13px;
+  letter-spacing:.2px;
+  text-transform:uppercase;
+  opacity:.85;
+}
+.phones{margin:0}
+.tel{font-weight:700}
+.sep{opacity:.5;margin:0 6px}
+
+.msg{margin:8px 0 0;display:flex;gap:8px;flex-wrap:wrap}
+.chip{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:8px 10px;border-radius:999px;
+  background:rgba(255,255,255,.1);
+  border:1px solid rgba(255,255,255,.18);
+  font-weight:600;
+}
+.chip:hover{background:rgba(255,255,255,.16);text-decoration:none}
+
+.socials{display:flex;gap:10px}
+.social{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:38px;height:38px;border-radius:12px;
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.15);
+}
+.social:hover{background:rgba(255,255,255,.15)}
+
+.footer-bottom{
+  border-top:1px dashed rgba(255,255,255,.2);
+  padding-top:10px;margin-top:10px;
+  display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap
+}
+.footer-bottom .madeby a{text-decoration:underline}
+
+
+/* --------------------------------- Sticky Call --------------------------------- */
+
+/* ---------- Sticky Call FAB ---------- */
+.sticky-call{
+  position:fixed;right:1.25rem;
+  bottom:calc(1.25rem + env(safe-area-inset-bottom));
+  z-index:9999;
+}
+.sc-fab{
+  width:56px;height:56px;border:0;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--brand-2);color:var(--accent);cursor:pointer;
+  box-shadow:0 6px 18px rgba(0,0,0,.28);
+  transition:transform .15s ease, filter .15s ease;
+}
+.sc-fab:hover{filter:brightness(1.04)}
+.sc-fab:active{transform:translateY(1px)}
+
+.sc-menu{
+  position:absolute;right:0;bottom:70px; /* κάθεται πάνω από το κουμπί */
+  display:grid;gap:8px;min-width:max(220px, 46vw);
+  opacity:0;transform:translateY(8px);pointer-events:none;
+  transition:opacity .18s ease, transform .18s ease;
+}
+.sc-item{
+  display:flex;align-items:center;gap:10px;
+  background:#fff;color:var(--dark);
+  border-radius:12px;padding:10px 12px;font-weight:700;
+  border:1px solid rgba(0,0,0,.08);
+  box-shadow:0 8px 22px rgba(0,0,0,.12);
+  text-decoration:none;
+}
+.sc-item:hover{text-decoration:underline}
+.sticky-call.open .sc-menu{opacity:1;transform:translateY(0);pointer-events:auto}
+
+/* Λεπτό fade-out/slide όταν πρέπει να κρυφτεί */
+.sticky-call.is-hidden{
+  opacity: 0;
+  transform: translateY(8px) scale(.98);
+  pointer-events: none;
+  transition: opacity .18s ease, transform .18s ease;
+}
+
+/* μειωμένη κίνηση */
+@media (prefers-reduced-motion: reduce){
+  .sc-fab{transition:none}
+  .sc-menu{transition:none}
+}
+
+
+
+/* Responsiveness */
+@media (max-width: 900px){
+  .footer-contacts{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width: 520px){
+  .footer-contacts{grid-template-columns:1fr}
+}
+
+/* κρύβεται πάντα */
+.skip{position:absolute;left:-9999px;top:auto}
+/* φαίνεται ΜΟΝΟ σε focus από πληκτρολόγιο */
+.skip:focus-visible{
+  left:8px;top:8px;background:#fff;padding:8px 12px;border-radius:8px;z-index:1000
+}
+
+/* Κλείδωμα scroll όταν το mobile menu είναι ανοικτό */
+body.nav-open { overflow: hidden; }
+
+/* Gapper */
+.gap { margin-block-start: var(--gap, 32px); }  
+
+
+/* --- Mobile / Tablet fixes --- */
+@media (max-width: 992px){
+  /* πιο άνετο tablet */
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .reviews{grid-template-columns:1fr 1fr}
+  .brands{grid-template-columns:repeat(4,1fr)}
+}
+
+
+/* Σιγουρεύουμε ότι το Χ δεν εμφανίζεται στο desktop, ακόμα κι αν μείνει στο DOM */
+.menu-close { display: none; }
+@media (max-width: 768px){ .menu-close { display: inline-block; } }
+
+
+/* --- Mobile <=768px overrides --- */
+@media (max-width: 768px){
+  
+  .gap { margin-block-start: calc(var(--gap, 32px) * .65); }
+
+  /* NAV: hamburger δεξιά */
+  .hamb{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:42px;height:42px;font-size:26px;line-height:1;margin-left:auto;
+    background:transparent;border:0;color:#fff;cursor:pointer;
+  }
+  .nav-inner{gap:8px}
+  .nav-actions{display:none}
+
+  /* Drop sheet που ξεκινά ΚΑΤΩ από τη μπάρα (top = --navH) */
+  .menu{
+    position:fixed;left:0;right:0;top:var(--navH,56px);width:100%;
+    max-height:80dvh;overflow:auto;
+    background:linear-gradient(90deg,var(--brand),var(--brand-2));
+    color:#fff;
+    padding:14px 18px 22px;
+    display:flex;flex-direction:column;gap:12px;
+    transform:translateY(-8px);opacity:0;visibility:hidden;
+    transition:transform .22s ease, opacity .22s ease, visibility 0s linear .22s;
+    z-index:60;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+    border-bottom-left-radius:14px;border-bottom-right-radius:14px;
+    pointer-events:none;
+  }
+  .menu a{
+    color:#fff;font-weight:800;
+    padding:12px 6px; /* μεγάλα tap targets */
+  }
+  #menu.open{
+    transform:translateY(0);
+    opacity:1; visibility:visible; pointer-events:auto;
+    transition:transform .22s ease, opacity .22s ease;
+  }
+
+  /* Hero stack & spacing */
+  .hero .hero-inner{display:grid;grid-template-columns:1fr;gap:16px;align-items:center;text-align:center}
+  .hero .billboard{order:-1}
+  .hero .billboard img{width:100%;height:auto;border-radius:var(--radius)}
+  .hero .headband small{display:block;margin-top:6px;opacity:.9}
+  .hero-bullets{gap:6px;margin:10px 0}
+  .hero-bullets li{padding:9px 10px;font-size:14px}
+  .cta-row{justify-content:center}
+  .btn-big,.btn{width:100%;max-width:480px}
+
+  .btn-big{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    line-height:1;
+    text-align:center;
+  }
+
+
+  /* Sections & headings */
+  .section{padding:32px 0}
+  h1{font-size:clamp(24px,7vw,32px)}
+  h2{font-size:clamp(18px,5.6vw,24px)}
+
+  /* Grids */
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:12px
+  }
+  .card .p{padding:10px}
+  .card h3{font-size:15px;line-height:1.25}
+  .price{font-size:16px}
+  .old{font-size:12px}
+  .strip ul{grid-template-columns:1fr 1fr}
+  .about{grid-template-columns:1fr;gap:18px}
+  .contact{grid-template-columns:1fr;gap:18px}
+
+  /* reviews */
+  .reviews{
+    display: grid;
+    grid-template-columns:1fr;
+    gap: 10px;
+  }
+  .review{
+    padding: 10px;              /* πιο μικρό padding */
+    border-radius: 12px;        /* προαιρετικά λίγο πιο “μαζεμένο” */
+  }
+  .review .stars{
+    font-size: 14px;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .review p{
+    margin: 4px 0 6px;
+    font-size: 14px;            /* λίγο μικρότερο κείμενο */
+    line-height: 1.35;
+  }
+  .review small{
+    font-size: 12px;
+    opacity: .8;
+  }
+
+  /* Map */
+  #map iframe,.map iframe{width:100%;height:260px;border:0;border-radius:var(--radius)}
+  
+  /* Κόψε οριζόντιο scroll σε mobile */
+  /* html, body { overflow-x: hidden; } */
+
+  /* Μην αφήνεις παιδιά των grids να “σπρώχνουν” το πλάτος */
+  :where(.strip ul, .about, .reviews, .brands, .contact, .grid) > * { min-width: 0; }
+
+  /* Σπάσε πολύ μακριές λέξεις/αλφαριθμητικά (π.χ. μοντέλα) για να μην ξεχειλώνει η στήλη */
+  :where(h1,h2,h3,p,li,small){ overflow-wrap: break-word; }
+}
+
+/* Global safeguard (προαιρετικό) */
+:where(.strip ul, .about, .reviews, .brands, .contact) > * { min-width: 0; }
+
+
+/* Mobile chips */
+/* ——— Teaser micro-cards για κινητό ——— */
+@media (max-width: 768px){
+  /* κρατάμε 3 στήλες */
+  #featured #teaser.grid{
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 10px;
+  }
+
+  /* πιο “τετράγωνες” εικόνες για να μην γίνονται μακρόστενες οι κάρτες */
+  #featured #teaser .card img{
+    aspect-ratio: 1 / 1 !important;   /* override του 4/3 */
+    object-fit: cover;
+  }
+
+  /* σφίξιμο περιεχομένου */
+  #featured #teaser .card .p{ padding: 8px 8px 10px; }
+  #featured #teaser .card h3{
+    font-size: 13px; line-height: 1.25;
+    display: -webkit-box; 
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden; /* 2 γραμμές max */
+    word-break: break-word;
+  }
+  #featured #teaser .meta{ display:none; } /* κρύψε το subtext για χώρο */
+
+  #featured #teaser .price b{ font-size: 16px; }
+  #featured #teaser .price s{ font-size: 12px; }
+
+  /* Προτεινόμενο: κρύψε τα κουμπιά στο teaser για καθαρό layout */
+  #featured #teaser .buy{ display:none; }
+
+  /* Γενικό “στρογγύλεμα” */
+  #featured #teaser .card{ border-radius: 12px; }
+}
+
+/* ακόμη πιο μικρές οθόνες */
+@media (max-width: 420px){
+  #featured #teaser.grid{ gap: 8px; }
+}
+
+
+/*////////////////////////////////////////////////////////////////////////////////////// */
+/* --------------------- Products: Controls/Search/Sort -------------------- */
+.controls{
+  display:flex; flex-wrap:wrap; align-items:center; gap:10px;
+  margin:8px 0 14px;
+}
+
+/* Search bar */
+.searchbar{
+  position:relative; display:flex; align-items:center; gap:8px;
+  background:#fff; border:1px solid #e5e7eb; border-radius:14px;
+  padding:10px 12px 10px 38px; box-shadow:var(--shadow);
+  width:min(680px,100%); flex:1;
+}
+.searchbar .icon{
+  position:absolute; left:12px; width:18px; height:18px; opacity:.6;
+  fill:currentColor; color:#64748b;
+}
+.searchbar input{
+  width:100%; border:0; outline:0; background:transparent; font-size:16px;
+}
+.searchbar .clear{
+  display:none; border:0; background:transparent; font-size:18px;
+  line-height:1; padding:2px 6px; border-radius:8px; cursor:pointer; opacity:.55;
+}
+.searchbar.has-value .clear{ display:inline-flex; }
+.searchbar .slash{
+  margin-left:2px; border:1px solid #e5e7eb; border-radius:6px;
+  font-size:12px; padding:2px 6px; opacity:.7;
+}
+
+/* Sort select (το inline JS τοποθετεί <select id="sort"> μέσα σε .control-inline) */
+.control-inline{ position:relative; }
+.control-inline select{
+  appearance:none; -webkit-appearance:none;
+  background:#fff; border:1px solid #e5e7eb; border-radius:14px;
+  padding:10px 34px 10px 12px; font-weight:800; cursor:pointer;
+  box-shadow:var(--shadow);
+}
+.control-inline::after{
+  content:"▾"; position:absolute; right:12px; top:50%; transform:translateY(-50%);
+  pointer-events:none; opacity:.6;
+}
+
+/* Chips: οριζόντιο scroll σε μικρές οθόνες + πιο “πλούσιο” look */
+.chips{
+  display:flex; flex-wrap:nowrap; gap:8px; overflow:auto; padding-bottom:4px;
+  scroll-snap-type:x proximity;
+}
+.chip{ scroll-snap-align:start; }
+.chip{ transition:transform .15s ease, background .15s ease; }
+.chip:hover{ transform:translateY(-1px); }
+.chip.active{ background:#dfe6ff; border-style:solid }
+
+/* Pager */
+.pager{ display:flex; align-items:center; gap:10px; justify-content:center; margin:18px 0; }
+.pager .pageinfo{ color:var(--muted); font-weight:600 }
+.pager button{
+  background:#fff; border:1px solid #e5e7eb; border-radius:12px;
+  padding:8px 12px; font-weight:800; cursor:pointer;
+}
+.pager button:disabled{ opacity:.45; cursor:not-allowed }
+
+/* Helpers που χρησιμοποιείς ήδη σε HTML/JS */
+.muted{ color:var(--muted); }
+.sr-only{
+  position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0;
+}
+
+
+/* Κρύψε το native "×" των search inputs (WebKit/Chromium & παλιό Edge) */
+.searchbar input[type="search"]::-webkit-search-cancel-button,
+.searchbar input[type="search"]::-webkit-search-decoration{
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+.searchbar input[type="search"]::-ms-clear{ display:none; width:0; height:0; } /* legacy Edge/IE */
+
+
+/*////////////////////////////////////////////////////////////////////////////////////// */
+/* ======================  Contact — Lean Layout  ====================== */
+
+/* Όλα scoped σε .contact-lean για να μην αγγίζει άλλες σελίδες */
+.contact-lean h1{ margin-bottom:8px }
+.contact-lean > p.muted{ margin-top:0 }
+
+/* ---- Duo cards (Τηλέφωνο • Μήνυμα) ---- */
+.contact-lean .duo{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+  margin:14px 0 18px;
+  align-items:stretch;
+}
+.contact-lean .card{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  height:100%;
+  transition: transform .15s ease;
+}
+.contact-lean .card-head{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:2px;
+}
+
+/* SVG icon styling */
+.contact-lean .card .icon svg{
+  width:20px; height:20px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.contact-lean .card .icon .dot{
+  fill: currentColor;
+  stroke: none;
+}
+
+
+.contact-lean .card .icon{
+  width:40px;height:40px;border-radius:12px;
+  display:grid;place-items:center;font-size:20px;
+  background:#fafafa;border:1px solid #e5e7eb;
+}
+
+/* ---- Buttons layout ---- */
+.contact-lean .btn-row{ display:flex; flex-wrap:wrap; gap:8px }
+.contact-lean .btn-row .btn{ flex:1 1 auto; text-align:center }
+.contact-lean .btn-col{ display:grid; gap:8px; grid-auto-rows:minmax(44px,auto) }
+.contact-lean .btn-col .btn{ text-align:center }
+
+/* ---- Form ---- */
+.contact-lean .form{ margin-top:8px }
+.contact-lean .form h2{ margin:0 0 8px }
+.contact-lean .mini-form{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+.contact-lean .mini-form label{ display:grid; gap:6px; font-weight:600 }
+.contact-lean .mini-form input,
+.contact-lean .mini-form textarea{
+  width:100%;
+  padding:10px 12px;
+  border-radius:12px;
+  border:1px solid #e5e7eb;
+  background:#fff;
+  font:inherit;
+}
+.contact-lean .mini-form textarea#message{ grid-column:1 / -1 } /* message full width */
+
+
+/* ---- Info / Map ---- */
+.contact-lean .info{ margin-top:16px }
+.contact-lean .info h2{ margin:0 0 8px }
+.contact-lean .info .list{ margin:0; padding-left:0; list-style:none }
+.contact-lean .info .list li + li{ margin-top:6px }
+
+.contact-lean .map{ margin-top:12px }
+.contact-lean .map h2{ margin:0 0 8px }
+.contact-lean .map-embed iframe{
+  width:100%;
+  aspect-ratio:16/10;   /* σύγχρονοι browsers */
+  min-height:320px;     /* fallback ύψος */
+  border:0;
+}
+
+/* ---- Focus (a11y) ---- */
+.contact-lean a.btn:focus-visible,
+.contact-lean input:focus-visible,
+.contact-lean textarea:focus-visible{
+  outline:2px solid var(--brand, #2418b8);
+  outline-offset:2px;
+}
+
+/* ---- Subtle hover (προαιρετικό, “corporate”) ---- */
+.contact-lean .card:hover{
+  transform:translateY(-1px);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 800px){
+  .contact-lean .duo{ grid-template-columns:1fr }
+}
+@media (max-width: 700px){
+  .contact-lean .mini-form{ grid-template-columns:1fr }
+  .contact-lean .mini-form textarea#message{ grid-column:auto }
+}
+
+
+/* ----- Info + Map side-by-side ----- */
+.contact-lean .info-map{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+  margin-top:16px;
+  align-items:stretch;
+}
+.contact-lean .info-map .box{ height:100% }
+
+/* Ήπιο ρυθμιστικό ύψος χάρτη για 2-στήλες */
+@media (min-width: 901px){
+  .contact-lean .map-embed iframe{
+    aspect-ratio: 4 / 3;   /* λίγο πιο «τετράγωνο» για ευαναγνωσία */
+    min-height: 380px;
+  }
+}
+
+/* Mobile στοίβαξη */
+@media (max-width: 900px){
+  .contact-lean .info-map{ grid-template-columns:1fr }
+  .contact-lean .map-embed iframe{
+    aspect-ratio: 16 / 10;
+    min-height: 320px;
+  }
+}
+
+/* =================== Payments (Τρόποι Πληρωμής) =================== */
+
+.contact-lean .payments{
+  margin: 26px 0;   /* πάνω-κάτω κενό */
+}
+
+/* Payments — remove right-edge fade on IBAN */
+.payments .payments-list .iban{
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
+}
+
+
+.payments h2 { margin-bottom: 10px; }
+.payments .muted { margin-top: 0; }
+
+.payments .payments-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;            /* μία κάτω από την άλλη με κενά */
+  gap: 12px;
+}
+
+/* Κάρτα/γραμμή κάθε τράπεζας */
+.payments .payments-list li{
+  display: grid;
+  grid-template-columns: 1fr auto;                 /* IBAN παίρνει όλο το διαθέσιμο, κουμπί στα δεξιά */
+  grid-template-areas:
+    "title title"
+    "iban  btn";
+  align-items: center;
+  gap: 8px 10px;
+
+  padding: 10px 12px;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.06);
+  border-radius: 12px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.03);
+}
+
+/* κρύψε το <br> από το markup για καθαρή διάταξη */
+.payments .payments-list li br{ display:none; }
+
+/* Τίτλος τράπεζας */
+.payments .payments-list li > b{
+  grid-area: title;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+/* Η γραμμή IBAN: δεν τυλίγεται ποτέ και κάνει H-Scroll μόνο η ίδια */
+.payments .payments-list .iban{
+  grid-area: iban;
+  display: block;
+  max-width: 100%;
+  white-space: nowrap;          /* ΜΗΝ σπάσει */
+  overflow-x: auto;             /* μόνο οριζόντιο scroll */
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;  /* ομαλό scroll στα κινητά */
+  padding-bottom: 2px;          /* να μη “κολλάει” η μπάρα στο κείμενο */
+
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 14px;
+  letter-spacing: .4px;         /* μικρή απόσταση για ευκρίνεια IBAN */
+  color: #0f172a;
+}
+
+/* Κουμπί αντιγραφής */
+.payments .payments-list .copy-btn{
+  grid-area: btn;
+  appearance: none;
+  border: 1px solid rgba(0,0,0,.12);
+  background: #f8fafc;
+  border-radius: 10px;
+  width: 34px;
+  height: 34px;
+  display: inline-grid;
+  place-items: center;
+  cursor: pointer;
+  padding: 0;
+  transition: transform .08s ease, background .15s ease, border-color .15s ease;
+}
+
+.payments .payments-list .copy-btn:hover{
+  background: #eef2ff;
+  border-color: rgba(0,0,0,.18);
+}
+
+.payments .payments-list .copy-btn:active{
+  transform: scale(.96);
+}
+
+.payments .payments-list .copy-btn:focus-visible{
+  outline: 2px solid #4f46e5;
+  outline-offset: 2px;
+}
+
+/* Μικρές οθόνες: λίγο πιο “σφιχτή” τυπογραφία */
+@media (max-width: 420px){
+  .payments .payments-list li{
+    padding: 10px;
+    gap: 6px 8px;
+  }
+  .payments .payments-list .iban{
+    font-size: 13.5px;
+  }
+}
