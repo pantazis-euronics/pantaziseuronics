@@ -46,7 +46,7 @@
   <link rel="stylesheet" href="style.css" />
   
   <!-- Preload LCP (1η εικόνα slider) -->
-  <link rel="preload" as="image" href="/images/van.jpg" fetchpriority="high" imagesrcset="/images/van.jpg 1600w" /> <!-- TODO -->
+  <link rel="preload" as="image" href="/images/van.jpg" fetchpriority="high" imagesrcset="/images/hero.jpg 1600w" /> <!-- TODO -->
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -54,12 +54,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
   <!-- TODO -->
-  <!-- Icons -->
-  <link rel="icon" href="/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0b57d0" />
+  <!-- ICONS -->
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <!-- Υπόλοιπα μέσα στο images/ -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+  <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#0b57d0">
+  <link rel="manifest" href="images/site.webmanifest">
 
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -189,9 +192,10 @@
 
         <aside class="billboard" aria-label="Εικόνες Πανταζής (slider)">
           <div class="slides">
-            <img class="slide active"  src="images/van.jpg"      width="1600" height="900" alt="Van παραδόσεων σε κίνηση">
-            <img class="slide"         src="images/KATO.png"     width="1600" height="900" alt="Σλόγκαν Πανταζής">
-            <img class="slide"         src="images/Euronics.png" width="1600" height="900" alt="Μαγαζί">
+            <img class="slide active"  src="images/hero.jpg"     width="1600" height="900" alt="Μαγαζί Euronics και van μεταφορών">
+            <img class="slide"         src="images/storefront.jpg" width="1600" height="900" alt="Μαγαζί πρόσοψη">
+            <img class="slide"         src="images/KATO.png"     width="1600" height="900" alt="Στο κάτω κάτω της τιμής υπάρχει ο Πανταζής">
+            <img class="slide"         src="images/base.jpg" width="1600" height="900" alt="Μαγαζί">
           </div>
 
           <!-- Προαιρετικά χειριστήρια (μπορείς να τα αφαιρέσεις αν δεν τα θέλεις) -->
