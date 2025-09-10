@@ -8,25 +8,7 @@
     "meta": "32'' LED Full HD, 1920×1080, α5 Gen5 AI, ThinQ AI & webOS",
     "price": 249
   },
-  {
-    "title": "LG 32LQ630B6LA 32'' Τηλεόραση",
-    "cat": "tv",
-    "sku": "8806091660848 - 106202",
-    "img": "images/8806091660848.jpg",
-    "alt": "LG 32LQ630B6LA 32'' Τηλεόραση",
-    "meta": "32'' LED, ThinQ AI & webOS",
-    "price": 229
-  },
-  {
-    "title": "LG 43NANO82T6B 43'' Τηλεόραση",
-    "cat": "tv",
-    "sku": "8806087330182 - 133996",
-    "img": "images/8806087330182.jpg",
-    "alt": "LG 43NANO82T6B 43'' Τηλεόραση",
-    "meta": "43'' 4K UHD NanoCell, webOS",
-    "price": 399
-  },
-  {
+   {
     "title": "LG 43UA73006LA 43'' Τηλεόραση",
     "cat": "tv",
     "sku": "8806091744883 - 112733",
@@ -35,34 +17,16 @@
     "meta": "43'' 4K UHD, webOS",
     "price": 369
   },
-  {
-    "title": "LG 43UR78006LK 43'' Τηλεόραση",
-    "cat": "tv",
-    "sku": "8806092262034 - 97224",
-    "img": "images/8806092262034.jpg",
-    "alt": "LG 43UR78006LK 43'' Τηλεόραση",
-    "meta": "43'' 4K UHD, webOS",
-    "price": 329
-  },
-  {
-    "title": "LG SN4 2.1ch Soundbar",
+   {
+    "title": "LG SN4 Home Cinema",
     "cat": "av-peripherals",
     "sku": "0719192641143 - 89406",
     "img": "images/0719192641143.jpg",
-    "alt": "LG SN4 2.1ch Soundbar",
-    "meta": "2.1ch 300W, DTS Virtual:X, Bluetooth",
+    "alt": "LG SN4 Home Cinema",
+    "meta": "2.1ch 200W, DTS Virtual:X, Bluetooth",
     "price": 169
   },
-  {
-    "title": "ΔΑΜΚΑΛΙΔΗΣ S43 Επιτοίχια Βάση Τηλεόρασης",
-    "cat": "av-peripherals",
-    "sku": "5202897003446 - 70985",
-    "img": "images/5202897003446.jpg",
-    "alt": "ΔΑΜΚΑΛΙΔΗΣ S43 Επιτοίχια Βάση Τηλεόρασης",
-    "meta": "Για 17''–43'', έως 26kg, Tilt -12°~+12°, VESA",
-    "price": 32.9
-  },
-  {
+    {
     "title": "Epson CO-W01 Projector",
     "cat": "av-peripherals",
     "sku": "8715946706849 - 116887",
@@ -71,36 +35,8 @@
     "meta": "WXGA 3LCD, 3000 lumen, HDMI",
     "price": 469
   },
-  {
-    "title": "EGOBOO X MAUI Vibes Sand Φορητό Ηχείο",
-    "cat": "av-peripherals",
-    "sku": "7483540310960 - 137489",
-    "img": "images/7483540310960.jpg",
-    "alt": "EGOBOO X MAUI Vibes Sand Φορητό Ηχείο",
-    "meta": "Bluetooth, 20W, μπαταρία 3600mAh, IPX5",
-    "price": 59.99
-  },  
-
-  {
-    "title": "KIDDOBOO Fotofun Blue Φωτογραφική Μηχανή",
-    "cat": "cameras",
-    "sku": "311381 - 130750",
-    "img": "images/311381.jpg",
-    "alt": "KIDDOBOO Fotofun Blue Φωτογραφική Μηχανή",
-    "meta": "Παιδική φωτογραφική μηχανή, εύκολη χρήση",
-    "price": 49.99
-  },
-  {
-    "title": "KIDDOBOO Fotofun Pink Φωτογραφική Μηχανή",
-    "cat": "cameras",
-    "sku": "311380 - 130749",
-    "img": "images/311380.jpg",
-    "alt": "KIDDOBOO Fotofun Pink Φωτογραφική Μηχανή",
-    "meta": "Παιδική φωτογραφική μηχανή, εύκολη χρήση",
-    "price": 49.99
-  },
-  {
-    "title": "CANON 4000D 18-55 Φωτογραφική Μηχανή DSLR",
+    {
+    "title": "Canon CA EOS 4000D BK 18-55 SEE Φωτογραφική DSLR",
     "cat": "cameras",
     "sku": "4549292174908 - 115531",
     "img": "images/4549292174908.jpg",
@@ -109,25 +45,15 @@
     "price": 399
   },
   {
-    "title": "CANON 2000D IS 18-55 Φωτογραφική Μηχανή",
+    "title": "CANON EOS 2000D IS Φωτογραφική DSLR",
     "cat": "cameras",
-    "sku": "8714574664099 - 110243",
-    "img": "images/8714574664099.jpg",
-    "alt": "CANON 2000D IS 18-55 Φωτογραφική Μηχανή",
+    "sku": "8714574663265 - 121742",
+    "img": "images/8714574663265.jpg",
+    "alt": "CANON EOS 2000D IS Φωτογραφική DSLR",
     "meta": "DSLR kit 18-55mm IS, εύκολη χρήση",
-    "price": 499
+    "price": 669
   },
-  {
-    "title": "EGOBOO X MAUI AND SONS ACTION EYE PRO Action Camera",
-    "cat": "cameras",
-    "sku": "5207244011235 - 131703",
-    "img": "images/5207244011235.jpg",
-    "alt": "EGOBOO X MAUI AND SONS ACTION EYE PRO Action Camera",
-    "meta": "4K video, οθόνη 2,33'', φακός 154°, έως 20MP",
-    "price": 179.99
-  },
-
-  {
+   {
     "title": "SHIFTCAM Snap Grip Midnight Λαβή Smartphone",
     "cat": "imaging-acc",
     "sku": "655729667623 - 116831",
@@ -145,25 +71,6 @@
     "meta": "Μαγνητικός δακτύλιος LED, 4 επίπεδα φωτεινότητας",
     "price": 39.99
   },
-  {
-    "title": "SHIFTCAM SnapPod Midnight Smartphone Τρίποδο",
-    "cat": "imaging-acc",
-    "sku": "655729667722 - 116833",
-    "img": "images/655729667722.jpg",
-    "alt": "SHIFTCAM SnapPod Midnight Smartphone Τρίποδο",
-    "meta": "Selfie-stick / τρίποδο με μαγνητική βάση",
-    "price": 39.99
-  },
-  {
-    "title": "SHIFTCAM Snap Grip Creator Kit Midnight Smartphone Kit",
-    "cat": "imaging-acc",
-    "sku": "655729667821 - 116830",
-    "img": "images/655729667821.jpg",
-    "alt": "SHIFTCAM Snap Grip Creator Kit Midnight Smartphone Kit",
-    "meta": "Πακέτο SnapGrip + SnapPod + SnapLight",
-    "price": 149.99
-  },
-
   {
     "title": "Apple MacBook Air 13.6'' M2 8GB/256GB (Midnight, 2022)",
     "cat": "laptop",
@@ -183,31 +90,22 @@
     "price": 1599
   },
   {
-    "title": "Apple MacBook Pro 14'' M3 Pro 18GB/512GB",
+    "title": "APPLE MacBook Air 13.6'' M4/16GB/256GB Midnight (MW123GR/A)",
     "cat": "laptop",
-    "sku": "195949141942 - 144105",
-    "img": "images/195949141942.jpg",
+    "sku": "195949838033 - 142890",
+    "img": "images/195949838033.jpg",
     "alt": "Apple MacBook Pro 14'' M3 Pro 18GB/512GB",
-    "meta": "14'' Liquid Retina XDR, Apple M3 Pro, 18GB RAM, 512GB SSD",
-    "price": 1599
+    "meta": "APPLE MacBook Air 13.6'' M4/16GB/256GB Midnight (MW123GR/A)",
+    "price": 1059
   },
   {
-    "title": "Apple MacBook Pro 16'' M1 Max 32GB/1TB",
+    "title": "APPLE MacBook Air 13.6'' M4/24GB/512GB Silver (MC654GR/A)",
     "cat": "laptop",
-    "sku": "194252545290 - 124154",
-    "img": "images/194252545290.jpg",
-    "alt": "Apple MacBook Pro 16'' M1 Max 32GB/1TB",
-    "meta": "16'' Liquid Retina XDR, Apple M1 Max, 32GB RAM, 1TB SSD",
-    "price": 2349
-  },
-  {
-    "title": "Apple MacBook Pro 14'' M3 Max 48GB/1TB",
-    "cat": "laptop",
-    "sku": "195949128806 - 144106",
-    "img": "images/195949128806.jpg",
-    "alt": "Apple MacBook Pro 14'' M3 Max 48GB/1TB",
-    "meta": "14'' Liquid Retina XDR, Apple M3 Max, 48GB RAM, 1TB SSD",
-    "price": 2299
+    "sku": "195949888724 - 145135",
+    "img": "images/195949888724.jpg",
+    "alt": "APPLE MacBook Air 13.6'' M4/24GB/512GB Silver (MC654GR/A)",
+    "meta": "APPLE MacBook Air 13.6'' M4/24GB/512GB Silver (MC654GR/A)",
+    "price": 1569
   },
 
   {
