@@ -54,7 +54,7 @@ img{max-width:100%;display:block;height:auto}
 }
 .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
 .logo{display:flex;align-items:center;gap:10px}
-/* Logo icon as <img> */
+
 img.logo-star{
   width:28px; height:28px;
   display:block;
