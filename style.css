@@ -623,6 +623,9 @@ body.nav-open { overflow: hidden; }
 .contact-lean h1{ margin-bottom:8px }
 .contact-lean > p.muted{ margin-top:0 }
 
+
+.contact-lean .card.msg{ margin-top: 0; }
+
 /* ---- Duo cards (Τηλέφωνο • Μήνυμα) ---- */
 .contact-lean .duo{
   display:grid;
@@ -716,10 +719,6 @@ body.nav-open { overflow: hidden; }
   outline-offset:2px;
 }
 
-/* ---- Subtle hover (προαιρετικό, “corporate”) ---- */
-.contact-lean .card:hover{
-  transform:translateY(-1px);
-}
 
 /* ---- Responsive ---- */
 @media (max-width: 800px){
