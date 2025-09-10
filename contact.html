@@ -148,7 +148,51 @@
         <h1>Επικοινωνία</h1>
         <p class="muted">Διάλεξε αν θες να μιλήσουμε τώρα ή να μας στείλεις μήνυμα.</p>
     
-        <!-- 1. Τηλέφωνο & Μήνυμα (δίπλα-δίπλα) -->
+        <!-- 1. Φόρμα επικοινωνίας -->
+        <section class="box form" aria-label="Φόρμα επικοινωνίας">
+        <h2>Γρήγορη φόρμα</h2>
+        <!-- TODO -->
+        <form id="contactForm"
+            action="https://formsubmit.co/pantaziseuronics@gmail.com"
+            method="POST"
+            class="mini-form" novalidate>
+            <!-- Ρυθμίσεις FormSubmit -->
+            <input type="hidden" name="_subject" value="Νέο μήνυμα από pantazis-euronics.gr">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <!-- Auto-reply προς τον πελάτη (αν συμπληρώσει email) -->
+            <input type="hidden" name="_autoresponse" value="Ευχαριστούμε για το μήνυμά σας! Το λάβαμε και θα επικοινωνήσουμε άμεσα. — Euronics Πανταζής">
+
+            <!-- Honeypot anti-spam -->
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+            <label>Ονοματεπώνυμο
+                <input name="name" autocomplete="name" required
+                    placeholder="Π.χ. Μαρία Παπαδοπούλου">
+            </label>
+
+            <label>Τηλέφωνο
+                <input name="phone" autocomplete="tel" inputmode="tel" required
+                    placeholder="69xx xxx xxx">
+            </label>
+
+            <label>Email (προαιρετικό)
+                <input name="email" type="email" autocomplete="email" placeholder="name@example.com">
+            </label>
+
+            <label>Μήνυμα
+                <textarea id="message" name="message" rows="2" placeholder="Γράψτε το μήνυμά σας"></textarea>
+            </label>
+
+            <button id="contactSubmit" class="btn btn-primary" type="submit">Αποστολή</button>
+            <p id="formStatus" class="muted" role="status" aria-live="polite"></p>
+        </form>
+
+        </section>
+
+
+
+        <!-- 2. Τηλέφωνο & Μήνυμα (δίπλα-δίπλα) -->
         <section class="duo" aria-label="Γρήγορες επιλογές επικοινωνίας">
         <!-- Τηλέφωνο -->
         <article class="box card call">
@@ -191,51 +235,47 @@
         </article>
         </section>
 
-        <!-- 2. Φόρμα επικοινωνίας -->
-        <section class="box form" aria-label="Φόρμα επικοινωνίας">
-        <h2>Γρήγορη φόρμα</h2>
-        <!-- TODO -->
-        <form id="contactForm"
-            action="https://formsubmit.co/pantaziseuronics@gmail.com"
-            method="POST"
-            class="mini-form" novalidate>
-            <!-- Ρυθμίσεις FormSubmit -->
-            <input type="hidden" name="_subject" value="Νέο μήνυμα από pantazis-euronics.gr">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_template" value="table">
-            <!-- Auto-reply προς τον πελάτη (αν συμπληρώσει email) -->
-            <input type="hidden" name="_autoresponse" value="Ευχαριστούμε για το μήνυμά σας! Το λάβαμε και θα επικοινωνήσουμε άμεσα. — Euronics Πανταζής">
-
-            <!-- Honeypot anti-spam -->
-            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
-
-            <label>Ονοματεπώνυμο
-                <input name="name" autocomplete="name" required
-                    placeholder="Π.χ. Μαρία Παπαδοπούλου">
-            </label>
-
-            <label>Τηλέφωνο
-                <input name="phone" autocomplete="tel" inputmode="tel" required
-                    placeholder="69xx xxx xxx">
-            </label>
-
-            <label>Email (προαιρετικό)
-                <input name="email" type="email" autocomplete="email" placeholder="name@example.com">
-            </label>
-
-            <label>Μήνυμα
-                <textarea id="message" name="message" rows="2" placeholder="Γράψτε το μήνυμά σας"></textarea>
-            </label>
-
-            <button id="contactSubmit" class="btn btn-primary" type="submit">Αποστολή</button>
-            <p id="formStatus" class="muted" role="status" aria-live="polite"></p>
-        </form>
-
-
+        <!-- 3. Τρόποι Πληρωμής  -->
+        <section class="box payments" aria-label="Τρόποι πληρωμής" id="payments">
+        <details class="collapsible">
+            <summary class="collapsible-summary" role="heading" aria-level="2">
+                <span>Τρόποι Πληρωμής</span>
+            </summary>
+            <p class="muted">Μπορείτε να καταθέσετε την προκαταβολή ή το συνολικό ποσό σε έναν από τους παρακάτω λογαριασμούς:</p>
+            <ul class="list payments-list">
+                <li>
+                <b>Τράπεζα Πειραιώς</b><br>
+                <span class="iban" id="iban-piraeus">GR46 0172 4030 0054 0310 4928 230</span>
+                <button class="copy-btn" data-target="iban-piraeus" aria-label="Αντιγραφή IBAN">
+                    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+                        <path d="M16 1H6a2 2 0 0 0-2 2v2h2V3h10V1zm2 4H8a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm0 14H8V7h10v12z" fill="currentColor"/>
+                    </svg>
+                </button>
+                </li>
+                <li>
+                <b>Eurobank</b><br>
+                <span class="iban" id="iban-eurobank">GR70 0260 1150 0000 10200 7170 43</span>
+                <button class="copy-btn" data-target="iban-eurobank" aria-label="Αντιγραφή IBAN">
+                    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+                        <path d="M16 1H6a2 2 0 0 0-2 2v2h2V3h10V1zm2 4H8a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm0 14H8V7h10v12z" fill="currentColor"/>
+                    </svg>
+                </button>
+                </li>
+                <li>
+                <b>Τράπεζα Ηπείρου</b><br>
+                <span class="iban" id="iban-epirus">GR79 0750 0600 0306 0100 7630 006</span>
+                <button class="copy-btn" data-target="iban-epirus" aria-label="Αντιγραφή IBAN">
+                    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+                        <path d="M16 1H6a2 2 0 0 0-2 2v2h2V3h10V1zm2 4H8a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm0 14H8V7h10v12z" fill="currentColor"/>
+                    </svg>
+                </button>
+                </li>
+            </ul>
+        </details>
         </section>
 
         <section class="info-map" aria-label="Στοιχεία & Χάρτης">
-            <!-- 3. Στοιχεία & Ωράριο -->
+            <!-- 4. Στοιχεία & Ωράριο -->
             <section class="box info" aria-label="Στοιχεία & Ωράριο">
             <h2>Στοιχεία & Ωράριο</h2>
             <ul class="list">
@@ -254,7 +294,7 @@
             </div>
             </section>
 
-            <!-- 4. Χάρτης -->
+            <!-- 5. Χάρτης -->
             <section class="box map" aria-label="Χάρτης">
             <h2>Χάρτης</h2>
             <div class="map-embed">
@@ -264,43 +304,6 @@
             </div>
             </section>
         </section>
-
-
-        <section class="box payments" aria-label="Τρόποι πληρωμής">
-        <h2>Τρόποι Πληρωμής</h2>
-        <p class="muted">Μπορείτε να καταθέσετε την προκαταβολή ή το συνολικό ποσό σε έναν από τους παρακάτω λογαριασμούς:</p>
-        <ul class="list payments-list">
-            <li>
-            <b>Τράπεζα Πειραιώς</b><br>
-            <span class="iban" id="iban-piraeus">GR46 0172 4030 0054 0310 4928 230</span>
-            <button class="copy-btn" data-target="iban-piraeus" aria-label="Αντιγραφή IBAN">
-                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
-                    <path d="M16 1H6a2 2 0 0 0-2 2v2h2V3h10V1zm2 4H8a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm0 14H8V7h10v12z" fill="currentColor"/>
-                </svg>
-            </button>
-            </li>
-            <li>
-            <b>Eurobank</b><br>
-            <span class="iban" id="iban-eurobank">GR70 0260 1150 0000 10200 7170 43</span>
-            <button class="copy-btn" data-target="iban-eurobank" aria-label="Αντιγραφή IBAN">
-                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
-                    <path d="M16 1H6a2 2 0 0 0-2 2v2h2V3h10V1zm2 4H8a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm0 14H8V7h10v12z" fill="currentColor"/>
-                </svg>
-            </button>
-            </li>
-            <li>
-            <b>Τράπεζα Ηπείρου</b><br>
-            <span class="iban" id="iban-epirus">GR79 0750 0600 0306 0100 7630 006</span>
-            <button class="copy-btn" data-target="iban-epirus" aria-label="Αντιγραφή IBAN">
-                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
-                    <path d="M16 1H6a2 2 0 0 0-2 2v2h2V3h10V1zm2 4H8a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm0 14H8V7h10v12z" fill="currentColor"/>
-                </svg>
-            </button>
-            </li>
-        </ul>
-        </section>
-
-
 
     </div>
     </main>

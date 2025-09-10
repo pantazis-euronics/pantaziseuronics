@@ -98,7 +98,7 @@ img.logo-star{
 .headband h1{margin:0;font-size:clamp(22px,5vw,34px);font-weight:900}
 .headband small{opacity:.95}
 .billboard{
-  position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:16/9
+  position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:12/8
 }
 .billboard img{width:100%;height:100%;object-fit:cover;filter:saturate(1.05)}
 
@@ -867,3 +867,34 @@ body.nav-open { overflow: hidden; }
     font-size: 13.5px;
   }
 }
+
+
+
+/* ——— Payments: Accordion (details/summary) ——— */
+.payments details { margin: 0; }
+
+.payments .collapsible-summary{
+  list-style: none;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 8px 0 10px;
+  font-size: 1.25rem;          /* σαν h2 */
+  font-weight: 700;
+}
+.payments .collapsible-summary::-webkit-details-marker{ display:none; } /* Safari/Chrome */
+
+.payments .collapsible-summary::after{
+  content: "▸";
+  transition: transform .2s ease;
+  margin-left: 8px;
+}
+.payments details[open] .collapsible-summary::after{ transform: rotate(90deg); }
+
+.payments .collapsible-summary:focus-visible{
+  outline: 2px solid #4f46e5;
+  outline-offset: 2px;
+}
+
+/* Λίγο κενό κάτω από τον τίτλο όταν ανοίγει */
+.payments details[open] .payments-list{ margin-top: 10px; }
+.payments details[open] .muted{ margin-top: 6px; }
