@@ -392,23 +392,19 @@
         // ——— Prefill (στα ΑΓΓΛΙΚΑ, εκτός από το Product title που μπορεί να είναι ελληνικό) ———
         function prefillFromQuery() {
             var p = new URLSearchParams(location.search);
-            var title = p.get('title');      // π.χ. «Ψυγείο LG …» (μπορεί να είναι ελληνικά)
-            var sku   = p.get('sku');        // π.χ. 357717318
-            var msg   = document.getElementById('message');
-            if (!msg) return;
+            var title = (p.get('title') || '').trim();
+            var sku   = (p.get('sku')   || '').trim();
+            var hasProductCtx = !!(title || sku);
+
+            var msg = document.getElementById('message');
+            if (!msg || !hasProductCtx || msg.value) return; // <-- κλειδί: μόνο αν υπάρχει context προϊόντος
 
             var lines = [];
-            if (title) lines.push('Product: ' + title);               // τίτλος όπως είναι (ελληνικά/αγγλικά)
-            if (sku) {
-            var codeLine = 'Code: ' + sku;
-            lines.push(codeLine);
-            }
-            lines.push('Request: Order');                             // σταθερά προσυμπλήρωση
+            if (title) lines.push('Product: ' + title);
+            if (sku)   lines.push('Code: ' + sku);
+            lines.push('Request: Order');
 
-            // Γράφουμε τις γραμμές στο textarea μόνο αν είναι κενό
-            if (lines.length && !msg.value) {
             msg.value = lines.join(' · ') + '\n\n';
-            }
         }
 
         // ——— Υποβολή (AJAX) προς FormSubmit + καθαρό feedback στον χρήστη ———
@@ -429,12 +425,14 @@
 
             // Προσθέτουμε και metadata στο email που θα λάβεις
             var p = new URLSearchParams(location.search);
-            var title = p.get('title');
-            var sku   = p.get('sku');
+            var title = (p.get('title') || '').trim();
+            var sku   = (p.get('sku')   || '').trim();
+            var hasProductCtx = !!(title || sku);
 
             if (title) data.append('product_title', title);
             if (sku)   data.append('code', sku);
-            data.append('request', 'Order');
+            if (hasProductCtx) data.append('request', 'Order'); // μόνο όταν υπάρχει προϊόν
+
 
             // UI: κατάσταση αποστολής
             var originalText = button ? button.textContent : '';
