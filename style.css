@@ -55,13 +55,17 @@ img{max-width:100%;display:block;height:auto}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
 .logo{display:flex;align-items:center;gap:10px}
 
+/* ΜΟΝΟ για το εικονίδιο ως <img> — χωρίς κύκλο */
 img.logo-star{
-  width:28px; height:28px;
-  display:block;
-  border-radius:50%;
-  object-fit:cover;
-  border:0; /* βγάλε το παλιό περίγραμμα αν δεν το θέλεις */
+  width:28px;
+  height:28px;
+  display:block;         /* ή inline-block, αν το θες στη γραμμή */
+  border-radius:0;       /* βγάζει τον κύκλο */
+  border:0;              /* βγάζει το δαχτυλίδι */
+  object-fit:contain;    /* να μη “κόβεται” */
+  background:none;
 }
+
 
 .brand-wrap{line-height:1}
 .brand{font-weight:900;letter-spacing:.2px;font-size:clamp(18px,4.5vw,22px)}
