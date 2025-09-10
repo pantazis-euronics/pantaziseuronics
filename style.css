@@ -54,10 +54,15 @@ img{max-width:100%;display:block;height:auto}
 }
 .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
 .logo{display:flex;align-items:center;gap:10px}
-.logo-star{
-  width:28px;height:28px;border:2px solid var(--accent);border-radius:50%;
-  display:grid;place-items:center;color:var(--accent);font-weight:800
+/* Logo icon as <img> */
+img.logo-star{
+  width:28px; height:28px;
+  display:block;
+  border-radius:50%;
+  object-fit:cover;
+  border:0; /* βγάλε το παλιό περίγραμμα αν δεν το θέλεις */
 }
+
 .brand-wrap{line-height:1}
 .brand{font-weight:900;letter-spacing:.2px;font-size:clamp(18px,4.5vw,22px)}
 .sub{font-size:12px;letter-spacing:.5px;opacity:.95}
