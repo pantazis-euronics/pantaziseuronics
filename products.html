@@ -13,7 +13,7 @@
 
   <title>Προϊόντα | Euronics Πανταζής — Τηλεοράσεις, Λευκές Συσκευές, Κλιματισμός (Ήπειρος)</title>
   <meta name="description" content="Δες όλα τα προϊόντα: τηλεοράσεις, υπολογιστές, λευκές συσκευές, κλιματισμός, gaming κ.ά. Παράδοση & εγκατάσταση σε Θεσπρωτία, Ιωάννινα, Πρέβεζα, Άρτα." />
-  <link rel="canonical" href="https://pantazis-euronics.gr/products.html" />
+  <link rel="canonical" href="https://pantaziseuronics.gr/products.html" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#0b57d0" />
 
@@ -22,8 +22,8 @@
   <meta property="og:site_name" content="Euronics Πανταζής" />
   <meta property="og:title" content="Προϊόντα | Euronics Πανταζής" />
   <meta property="og:description" content="Μεταφορά & εγκατάσταση σε όλη την Ήπειρο." />
-  <meta property="og:url" content="https://pantazis-euronics.gr/products.html" />
-  <meta property="og:image" content="https://pantazis-euronics.gr/images/og-home.jpg" />  <!-- TODO-->
+  <meta property="og:url" content="https://pantaziseuronics.gr/products.html" />
+  <meta property="og:image" content="https://pantaziseuronics.gr/images/og-home.jpg" />  <!-- TODO-->
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:locale" content="el_GR" />
@@ -32,12 +32,12 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Προϊόντα | Euronics Πανταζής" />
   <meta name="twitter:description" content="Μεταφορά & εγκατάσταση σε όλη την Ήπειρο." />
-  <meta name="twitter:image" content="https://pantazis-euronics.gr/images/og-home.jpg" /> <!-- TODO-->
+  <meta name="twitter:image" content="https://pantaziseuronics.gr/images/og-home.jpg" /> <!-- TODO-->
   
   <!-- Hreflang -->
   <meta property="og:locale:alternate" content="en_US" />
-  <link rel="alternate" href="https://pantazis-euronics.gr/products.html" hreflang="el-GR" />
-  <link rel="alternate" href="https://pantazis-euronics.gr/products.html" hreflang="x-default" />
+  <link rel="alternate" href="https://pantaziseuronics.gr/products.html" hreflang="el-GR" />
+  <link rel="alternate" href="https://pantaziseuronics.gr/products.html" hreflang="x-default" />
 
   <!-- Assets -->
   <link rel="preload" href="style.css" as="style">
@@ -57,8 +57,8 @@
     "@context":"https://schema.org",
     "@type":"BreadcrumbList",
     "itemListElement":[
-      {"@type":"ListItem","position":1,"name":"Αρχική","item":"https://pantazis-euronics.gr/"},
-      {"@type":"ListItem","position":2,"name":"Προϊόντα","item":"https://pantazis-euronics.gr/products.html"}
+      {"@type":"ListItem","position":1,"name":"Αρχική","item":"https://pantaziseuronics.gr/"},
+      {"@type":"ListItem","position":2,"name":"Προϊόντα","item":"https://pantaziseuronics.gr/products.html"}
     ]
   }
   </script>
@@ -68,9 +68,9 @@
   {
     "@context":"https://schema.org",
     "@type":"ElectronicsStore",
-    "@id":"https://pantazis-euronics.gr/#store",
+    "@id":"https://pantaziseuronics.gr/#store",
     "name":"Euronics Πανταζής",
-    "url":"https://pantazis-euronics.gr/"
+    "url":"https://pantaziseuronics.gr/"
   }
   </script>
 </head>
@@ -334,12 +334,12 @@
           const priceNum = (typeof p.price === 'number')
             ? p.price
             : Number(String(p.price||'').replace(/[^\d.,]/g,'').replace(/\./g, '').replace(',', '.')) || '';
-          const url = `https://pantazis-euronics.gr/products.html${skuStr ? `?sku=${encodeURIComponent(skuStr)}` : ''}`;
+          const url = `https://pantaziseuronics.gr/products.html${skuStr ? `?sku=${encodeURIComponent(skuStr)}` : ''}`;
 
           const product = {
             "@type": "Product",
             "name": p.title || "Προϊόν",
-            ...(p.img ? {"image": `https://pantazis-euronics.gr/${String(p.img).replace(/^\/?/,'')}`} : {}),
+            ...(p.img ? {"image": `https://pantaziseuronics.gr/${String(p.img).replace(/^\/?/,'')}`} : {}),
             ...(p.meta ? {"description": p.meta} : {}),
             ...(skuStr ? {"sku": skuStr} : {}),
             ...(p.brand ? {"brand": p.brand} : {}),
@@ -349,7 +349,7 @@
               ...(priceNum ? {"price": String(priceNum)} : {}),
               "availability":"https://schema.org/InStoreOnly",
               "itemCondition":"https://schema.org/NewCondition",
-              "seller":{"@id":"https://pantazis-euronics.gr/#store"}
+              "seller":{"@id":"https://pantaziseuronics.gr/#store"}
             },
             "url": url
           };
@@ -360,7 +360,7 @@
         const json = {
           "@context":"https://schema.org",
           "@type":"ItemList",
-          "@id":"https://pantazis-euronics.gr/products.html#list",
+          "@id":"https://pantaziseuronics.gr/products.html#list",
           "itemListOrder":"https://schema.org/ItemListUnordered",
           "numberOfItems": list.length,
           "itemListElement": items

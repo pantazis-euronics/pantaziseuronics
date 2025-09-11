@@ -91,7 +91,7 @@ function cardTpl(p){
              data-cat="${p.cat || ''}"
              ${p.sku ? `data-sku="${skuStr}"` : ''}
              itemscope itemtype="https://schema.org/Product">
-      <link itemprop="url" href="https://pantazis-euronics.gr/products.html${p.sku ? `?sku=${encodeURIComponent(skuStr)}` : ''}">
+      <link itemprop="url" href="https://pantaziseuronics.gr/products.html${p.sku ? `?sku=${encodeURIComponent(skuStr)}` : ''}">
       <meta itemprop="sku" content="${skuStr}">
       ${p.brand ? `<meta itemprop="brand" content="${p.brand}">` : ''}
 
@@ -110,7 +110,7 @@ function cardTpl(p){
           <meta itemprop="priceCurrency" content="EUR" />
           <link itemprop="availability" href="https://schema.org/InStoreOnly" />
           <meta itemprop="itemCondition" content="https://schema.org/NewCondition" />
-          <link itemprop="seller" href="https://pantazis-euronics.gr/#store" />
+          <link itemprop="seller" href="https://pantaziseuronics.gr/#store" />
         </div>
 
         <div class="buy">
