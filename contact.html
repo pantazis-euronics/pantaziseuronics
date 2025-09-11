@@ -542,36 +542,18 @@
 
     <script>
         (function(){
-        const box = document.getElementById('consent');
-        const KEY = 'ga_consent';
-
-        const apply = (mode) => {
-            gtag('consent', 'update', {
-            analytics_storage: mode === 'granted' ? 'granted' : 'denied',
-            ad_storage: 'denied',
-            ad_user_data: 'denied',
-            ad_personalization: 'denied'
-            });
-        };
-
-        const saved = localStorage.getItem(KEY);
-        if (saved) { apply(saved); box?.remove(); return; }
-
-        const upd = (mode) => {
-            localStorage.setItem(KEY, mode);
-            apply(mode);
-            box?.remove();
-        };
-
-        // button type & handlers
-        const btnA = document.getElementById('c-accept');
-        const btnR = document.getElementById('c-reject');
-        btnA.setAttribute('type', 'button');
-        btnR.setAttribute('type', 'button');
-        btnA.onclick = () => upd('granted');
-        btnR.onclick = () => upd('denied');
+        var b=document.getElementById('consent'); if(!b) return;
+        function apply(m){ try{ typeof gtag==='function' && gtag('consent','update',{analytics_storage:m,ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});}catch(_){} }
+        var k='ga_consent',s=null; try{s=localStorage.getItem(k)}catch(_){}
+        if(s){ apply(s); b.remove(); return; }
+        b.addEventListener('click', function(e){
+            var m=e.target&&e.target.id==='c-accept'?'granted':e.target&&e.target.id==='c-reject'?'denied':null;
+            if(!m) return; try{ localStorage.setItem(k,m) }catch(_){}
+            apply(m); b.remove();
+        });
         })();
     </script>
+
 
 
 </body>
