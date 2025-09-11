@@ -760,38 +760,34 @@
 
   <script>
     (function(){
-      var box = document.getElementById('consent');
-      if (!box) return;
+      const box = document.getElementById('consent');
+      const KEY = 'ga_consent';
 
-      var KEY = 'ga_consent';
+      const apply = (mode) => {
+        gtag('consent', 'update', {
+          analytics_storage: mode === 'granted' ? 'granted' : 'denied',
+          ad_storage: 'denied',
+          ad_user_data: 'denied',
+          ad_personalization: 'denied'
+        });
+      };
 
-      function apply(mode){
-        try {
-          if (typeof gtag === 'function') {
-            gtag('consent', 'update', {
-              analytics_storage: mode === 'granted' ? 'granted' : 'denied',
-              ad_storage: 'denied',
-              ad_user_data: 'denied',
-              ad_personalization: 'denied'
-            });
-          }
-        } catch(_) {}
-      }
+      const saved = localStorage.getItem(KEY);
+      if (saved) { apply(saved); box?.remove(); return; }
 
-      // 1) Διάβασε ασφαλώς την αποθήκευση
-      var saved = null;
-      try { saved = localStorage.getItem(KEY); } catch(_) {}
-      if (saved) { apply(saved); box.remove(); return; }
-
-      // 2) Δέσε handlers με delegation (δεν “σκάει” αν λείπει κάποιο κουμπί)
-      box.addEventListener('click', function(e){
-        var id = e.target && e.target.id;
-        if (id !== 'c-accept' && id !== 'c-reject') return;
-        var mode = (id === 'c-accept') ? 'granted' : 'denied';
-        try { localStorage.setItem(KEY, mode); } catch(_) {}
+      const upd = (mode) => {
+        localStorage.setItem(KEY, mode);
         apply(mode);
-        box.remove();
-      });
+        box?.remove();
+      };
+
+      // button type & handlers
+      const btnA = document.getElementById('c-accept');
+      const btnR = document.getElementById('c-reject');
+      btnA.setAttribute('type', 'button');
+      btnR.setAttribute('type', 'button');
+      btnA.onclick = () => upd('granted');
+      btnR.onclick = () => upd('denied');
     })();
   </script>
 
