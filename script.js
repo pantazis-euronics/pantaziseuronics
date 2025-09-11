@@ -311,51 +311,46 @@ document.addEventListener('click', (e) => {
 window.dataLayer = window.dataLayer || [];
 window.gtag = window.gtag || function(){ dataLayer.push(arguments); };
 
-/* 1) Consent banner logic — robust init */
+/* 1) Consent banner logic (τρέχει σε κάθε σελίδα που έχει #consent) */
 (function () {
-  function setup(){
-    var box  = document.getElementById('consent');
-    if (!box) return; // σελίδα χωρίς banner
+  var box  = document.getElementById('consent');
+  if (!box) return; // σελίδα χωρίς banner
 
-    var KEY  = 'ga_consent';
-    var btnA = document.getElementById('c-accept');
-    var btnR = document.getElementById('c-reject');
-    if (btnA) btnA.type = 'button';
-    if (btnR) btnR.type = 'button';
+  var KEY  = 'ga_consent';
+  var btnA = document.getElementById('c-accept');
+  var btnR = document.getElementById('c-reject');
+  if (btnA) btnA.type = 'button';
+  if (btnR) btnR.type = 'button';
 
-    function apply(mode){
-      if (typeof gtag === 'function') {
-        gtag('consent', 'update', {
-          analytics_storage: mode === 'granted' ? 'granted' : 'denied',
-          ad_storage: 'denied',
-          ad_user_data: 'denied',
-          ad_personalization: 'denied'
-        });
-      }
+  function apply(mode){
+    if (typeof gtag === 'function') {
+      gtag('consent', 'update', {
+        analytics_storage: mode === 'granted' ? 'granted' : 'denied',
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied'
+      });
     }
-
-    var saved = null;
-    try { saved = localStorage.getItem(KEY); } catch(_) {}
-
-    if (saved) { apply(saved); box.remove(); return; }
-
-    function upd(mode){
-      try { localStorage.setItem(KEY, mode); } catch(_) {}
-      apply(mode);
-      box.remove();
-    }
-
-    btnA && btnA.addEventListener('click', function(){ upd('granted'); });
-    btnR && btnR.addEventListener('click', function(){ upd('denied');  });
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', setup);
-  } else {
-    setup();
+  var saved = null;
+  try { saved = localStorage.getItem(KEY); } catch(_){}
+
+  if (saved) {
+    apply(saved);
+    box.remove();
+    return;
   }
+
+  function upd(mode){
+    try { localStorage.setItem(KEY, mode); } catch(_){}
+    apply(mode);
+    box.remove();
+  }
+
+  btnA && btnA.addEventListener('click', function(){ upd('granted'); });
+  btnR && btnR.addEventListener('click', function(){ upd('denied');  });
 })();
-
 
 /* 2) Event instrumentation (outbound, leads, search, list, form) */
 
