@@ -305,61 +305,16 @@ document.addEventListener('click', (e) => {
 
 
 //Google analitics
-/* ================= GA4 (consent + events) ================= */
-
-// 0) Safe stubs (δεν αντικαθιστούν το gtag του <head>)
+/* ================= GA4 instrumentation ================= */
 window.dataLayer = window.dataLayer || [];
 window.gtag = window.gtag || function(){ dataLayer.push(arguments); };
 
-/* 1) Consent banner logic (τρέχει σε κάθε σελίδα που έχει #consent) */
-(function () {
-  var box  = document.getElementById('consent');
-  if (!box) return; // σελίδα χωρίς banner
-
-  var KEY  = 'ga_consent';
-  var btnA = document.getElementById('c-accept');
-  var btnR = document.getElementById('c-reject');
-  if (btnA) btnA.type = 'button';
-  if (btnR) btnR.type = 'button';
-
-  function apply(mode){
-    if (typeof gtag === 'function') {
-      gtag('consent', 'update', {
-        analytics_storage: mode === 'granted' ? 'granted' : 'denied',
-        ad_storage: 'denied',
-        ad_user_data: 'denied',
-        ad_personalization: 'denied'
-      });
-    }
-  }
-
-  var saved = null;
-  try { saved = localStorage.getItem(KEY); } catch(_){}
-
-  if (saved) {
-    apply(saved);
-    box.remove();
-    return;
-  }
-
-  function upd(mode){
-    try { localStorage.setItem(KEY, mode); } catch(_){}
-    apply(mode);
-    box.remove();
-  }
-
-  btnA && btnA.addEventListener('click', function(){ upd('granted'); });
-  btnR && btnR.addEventListener('click', function(){ upd('denied');  });
-})();
-
-/* 2) Event instrumentation (outbound, leads, search, list, form) */
-
-// Outbound clicks: tel/mailto/WhatsApp/Viber
-document.addEventListener('click', function(e){
-  var a = e.target.closest && e.target.closest('a[href]');
+/* 1) Outbound clicks: tel/mailto/WhatsApp/Viber */
+document.addEventListener('click', (e) => {
+  const a = e.target.closest('a[href]');
   if (!a) return;
-  var href = a.getAttribute('href') || '';
-  var isOutbound = /^(tel:|mailto:|viber:|https:\/\/wa\.me\/)/i.test(href);
+  const href = a.getAttribute('href') || '';
+  const isOutbound = /^(tel:|mailto:|viber:|https:\/\/wa\.me\/)/i.test(href);
   if (isOutbound) {
     gtag('event', 'click', {
       link_url: href,
@@ -369,90 +324,81 @@ document.addEventListener('click', function(e){
   }
 });
 
-// CTA από κάρτα προϊόντος -> generate_lead
-document.addEventListener('click', function(e){
-  var a = e.target.closest && e.target.closest('a[href*="contact.html"][href*="intent="]');
+/* 2) “Παραγγελία/Προσφορά/Διαθεσιμότητα” από κάρτα προϊόντος */
+document.addEventListener('click', (e) => {
+  const a = e.target.closest('a[href*="contact.html"][href*="intent="]');
   if (!a) return;
 
-  var href = new URL(a.href, location.href);
-  var intent = href.searchParams.get('intent') || 'order';
+  const href = new URL(a.href, location.href);
+  const intent = href.searchParams.get('intent') || 'order';
 
-  var card = a.closest('.card');
-  var item = {
-    item_id: (card && card.getAttribute('data-sku')) || '',
-    item_name: (card && card.querySelector('h3') && card.querySelector('h3').textContent.trim()) || '',
-    item_category: (card && card.getAttribute('data-cat')) || ''
+  // Πιάσε στοιχεία προϊόντος από την κάρτα
+  const card = a.closest('.card');
+  const item = {
+    item_id: card?.getAttribute('data-sku') || '',
+    item_name: card?.querySelector('h3')?.textContent?.trim() || '',
+    item_category: card?.getAttribute('data-cat') || ''
   };
 
+  // Lead (πιο ταιριαστό για επικοινωνία/παραγγελία μέσω φόρμας)
   gtag('event', 'generate_lead', {
-    intent: intent,
+    intent,
     items: [item],
-    value: undefined,
-    currency: 'EUR'
+    value: undefined, currency: 'EUR'
   });
 });
 
-// Site search (products.html)
+/* 3) Αναζήτηση στη σελίδα προϊόντων (products.html) */
 (function(){
-  var search = document.getElementById('search');
+  const search = document.getElementById('search');
   if (!search) return;
-  var t, last = '';
-  search.addEventListener('input', function(){
-    var q = search.value.trim();
+  let t, last = '';
+  search.addEventListener('input', () => {
+    const q = search.value.trim();
     clearTimeout(t);
     if (q.length < 2 || q === last) return;
-    t = setTimeout(function(){
+    t = setTimeout(() => {
       last = q;
       gtag('event', 'view_search_results', { search_term: q });
     }, 700);
   });
 })();
 
-// View item list όταν γεμίσει το grid (products.html)
+/* 4) View item list όταν γεμίζει το grid (products.html) */
 (function(){
-  var grid = document.getElementById('grid');
+  const grid = document.getElementById('grid');
   if (!grid || !('MutationObserver' in window)) return;
 
-  var lastHash = '';
-  var mo = new MutationObserver(function(){
-    var cards = Array.prototype.slice.call(grid.querySelectorAll('.card'));
+  let lastHash = '';
+  const mo = new MutationObserver(() => {
+    const cards = [...grid.querySelectorAll('.card')];
     if (!cards.length) return;
-    var items = cards.map(function(card){
-      return {
-        item_id: card.getAttribute('data-sku') || '',
-        item_name: (card.querySelector('h3') && card.querySelector('h3').textContent.trim()) || '',
-        item_category: card.getAttribute('data-cat') || ''
-      };
-    });
-    var hash = items.map(function(i){ return i.item_id || i.item_name; }).join('|');
-    if (hash === lastHash) return;
+    const items = cards.map(card => ({
+      item_id: card.getAttribute('data-sku') || '',
+      item_name: card.querySelector('h3')?.textContent?.trim() || '',
+      item_category: card.getAttribute('data-cat') || ''
+    }));
+    const hash = items.map(i => i.item_id || i.item_name).join('|');
+    if (hash === lastHash) return; // μην ξαναστείλεις το ίδιο set
     lastHash = hash;
-    gtag('event', 'view_item_list', { items: items });
+    gtag('event', 'view_item_list', { items });
   });
-
   mo.observe(grid, { childList: true });
 })();
 
-// Υποβολή φόρμας (contact.html) -> generate_lead
-document.addEventListener('submit', function(e){
-  var form = e.target;
+/* 5) Υποβολή φόρμας επικοινωνίας (contact.html) */
+document.addEventListener('submit', (e) => {
+  const form = e.target;
   if (!form || form.id !== 'contactForm') return;
 
-  var u = new URL(location.href);
+  const u = new URL(location.href);
   gtag('event', 'generate_lead', {
     method: 'form',
     intent: u.searchParams.get('intent') || '',
     product_title: u.searchParams.get('title') || '',
     sku: u.searchParams.get('sku') || ''
   });
-
-  // δώσε 120ms για να φύγει το beacon πριν ανοίξει mailto:
-  try {
-    if (form.action && form.action.startsWith('mailto:')) {
-      e.preventDefault();
-      setTimeout(function(){ form.submit(); }, 120);
-    }
-  } catch(_){}
+  // δώσε 120ms για να φύγει το beacon πριν ανοίξει το mailto:
+  try { if (form.action.startsWith('mailto:')) { e.preventDefault(); setTimeout(() => form.submit(), 120); } } catch(_){}
 });
-
-/* ================= end GA4 ================= */
+/* ================= end GA4 instrumentation ================= */

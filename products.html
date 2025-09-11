@@ -758,5 +758,44 @@
     }
   </style>
 
+  <script>
+    (function(){
+      var box = document.getElementById('consent');
+      if (!box) return;
+
+      var KEY = 'ga_consent';
+
+      function apply(mode){
+        try {
+          if (typeof gtag === 'function') {
+            gtag('consent', 'update', {
+              analytics_storage: mode === 'granted' ? 'granted' : 'denied',
+              ad_storage: 'denied',
+              ad_user_data: 'denied',
+              ad_personalization: 'denied'
+            });
+          }
+        } catch(_) {}
+      }
+
+      // 1) Διάβασε ασφαλώς την αποθήκευση
+      var saved = null;
+      try { saved = localStorage.getItem(KEY); } catch(_) {}
+      if (saved) { apply(saved); box.remove(); return; }
+
+      // 2) Δέσε handlers με delegation (δεν “σκάει” αν λείπει κάποιο κουμπί)
+      box.addEventListener('click', function(e){
+        var id = e.target && e.target.id;
+        if (id !== 'c-accept' && id !== 'c-reject') return;
+        var mode = (id === 'c-accept') ? 'granted' : 'denied';
+        try { localStorage.setItem(KEY, mode); } catch(_) {}
+        apply(mode);
+        box.remove();
+      });
+    })();
+  </script>
+
+
+
 </body>
 </html>
