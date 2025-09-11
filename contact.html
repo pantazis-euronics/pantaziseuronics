@@ -6,14 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 
   <!-- Google tag (gtag.js) -->
+  <link rel="preconnect" href="https://www.googletagmanager.com">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-8641R9T2Y9"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    function gtag(){ dataLayer.push(arguments); }
 
-    gtag('config', 'G-8641R9T2Y9');
+    // 1) Από προεπιλογή ΧΩΡΙΣ συναίνεση
+    gtag('consent', 'default', { analytics_storage: 'denied' });
+
+    // 2) Init + safe flags
+    gtag('js', new Date());
+    gtag('config', 'G-8641R9T2Y9', {
+      anonymize_ip: true,
+      cookie_flags: 'SameSite=None;Secure'
+    });
   </script>
+
 
 
 
@@ -530,42 +539,6 @@
         @keyframes cfade{ from{ opacity:0; transform: translateY(6px) } to{ opacity:1; transform:none } }
     }
     </style>
-
-    <script>
-    (function(){
-        const box = document.getElementById('consent');
-        const KEY = 'ga_consent';
-
-        const apply = (mode) => {
-        gtag('consent', 'update', {
-            analytics_storage: mode === 'granted' ? 'granted' : 'denied',
-            ad_storage: 'denied',
-            ad_user_data: 'denied',
-            ad_personalization: 'denied'
-        });
-        };
-
-        const saved = localStorage.getItem(KEY);
-        if (saved) { apply(saved); box?.remove(); return; }
-
-        const upd = (mode) => {
-        localStorage.setItem(KEY, mode);
-        apply(mode);
-        box?.remove();
-        };
-
-        // button type & handlers
-        const btnA = document.getElementById('c-accept');
-        const btnR = document.getElementById('c-reject');
-        btnA.setAttribute('type', 'button');
-        btnR.setAttribute('type', 'button');
-        btnA.onclick = () => upd('granted');
-        btnR.onclick = () => upd('denied');
-    })();
-    </script>
-
-
-
 
 </body>
 </html>
