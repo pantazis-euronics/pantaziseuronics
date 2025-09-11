@@ -3,16 +3,16 @@
     "title": "LG 32LQ63006LA 32'' Τηλεόραση",
     "cat": "tv",
     "sku": "8806091638359 - 108803",
-    "img": "images/8806091638359.jpg",
+    "img": "itemshop/8806091638359.jpg",
     "alt": "LG 32LQ63006LA 32'' Τηλεόραση",
     "meta": "32'' LED Full HD, 1920×1080, α5 Gen5 AI, ThinQ AI & webOS",
     "price": 249
   },
-   {
+  {
     "title": "LG 43UA73006LA 43'' Τηλεόραση",
     "cat": "tv",
     "sku": "8806091744883 - 112733",
-    "img": "images/8806091744883.jpg",
+    "img": "itemshop/8806091744883.jpg",
     "alt": "LG 43UA73006LA 43'' Τηλεόραση",
     "meta": "43'' 4K UHD, webOS",
     "price": 369
@@ -21,7 +21,7 @@
     "title": "LG SN4 Home Cinema",
     "cat": "av-peripherals",
     "sku": "0719192641143 - 89406",
-    "img": "images/0719192641143.jpg",
+    "img": "itemshop/0719192641143.jpg",
     "alt": "LG SN4 Home Cinema",
     "meta": "2.1ch 200W, DTS Virtual:X, Bluetooth",
     "price": 169
@@ -30,7 +30,7 @@
     "title": "Epson CO-W01 Projector",
     "cat": "av-peripherals",
     "sku": "8715946706849 - 116887",
-    "img": "images/8715946706849.jpg",
+    "img": "itemshop/8715946706849.jpg",
     "alt": "Epson CO-W01 Projector",
     "meta": "WXGA 3LCD, 3000 lumen, HDMI",
     "price": 469
@@ -39,7 +39,7 @@
     "title": "Canon CA EOS 4000D BK 18-55 SEE Φωτογραφική DSLR",
     "cat": "cameras",
     "sku": "4549292174908 - 115531",
-    "img": "images/4549292174908.jpg",
+    "img": "itemshop/4549292174908.jpg",
     "alt": "CANON 4000D 18-55 Φωτογραφική Μηχανή DSLR",
     "meta": "DSLR kit 18-55mm, Wi-Fi",
     "price": 399
@@ -48,7 +48,7 @@
     "title": "CANON EOS 2000D IS Φωτογραφική DSLR",
     "cat": "cameras",
     "sku": "8714574663265 - 121742",
-    "img": "images/8714574663265.jpg",
+    "img": "itemshop/8714574663265.jpg",
     "alt": "CANON EOS 2000D IS Φωτογραφική DSLR",
     "meta": "DSLR kit 18-55mm IS, εύκολη χρήση",
     "price": 669
@@ -57,7 +57,7 @@
     "title": "SHIFTCAM Snap Grip Midnight Λαβή Smartphone",
     "cat": "imaging-acc",
     "sku": "655729667623 - 116831",
-    "img": "images/655729667623.jpg",
+    "img": "itemshop/655729667623.jpg",
     "alt": "SHIFTCAM Snap Grip Midnight Λαβή Smartphone",
     "meta": "Μαγνητική λαβή με ασύρματο κλείστρο & Qi 3200mAh",
     "price": 89.99
@@ -66,7 +66,7 @@
     "title": "SHIFTCAM SnapLight Midnight Smartphone Led",
     "cat": "imaging-acc",
     "sku": "655729667678 - 116832",
-    "img": "images/655729667678.jpg",
+    "img": "itemshop/655729667678.jpg",
     "alt": "SHIFTCAM SnapLight Midnight Smartphone Led",
     "meta": "Μαγνητικός δακτύλιος LED, 4 επίπεδα φωτεινότητας",
     "price": 39.99
@@ -75,7 +75,7 @@
     "title": "APPLE MacBook Air 13.6'' M4/16GB/256GB Midnight (MW123GR/A)",
     "cat": "laptop",
     "sku": "195949838033 - 142890",
-    "img": "images/195949838033.jpg",
+    "img": "itemshop/195949838033.jpg",
     "alt": "Apple MacBook Pro 14'' M3 Pro 18GB/512GB",
     "meta": "APPLE MacBook Air 13.6'' M4/16GB/256GB Midnight (MW123GR/A)",
     "price": 1059
@@ -84,212 +84,89 @@
     "title": "APPLE MacBook Air 13.6'' M4/24GB/512GB Silver (MC654GR/A)",
     "cat": "laptop",
     "sku": "195949888724 - 145135",
-    "img": "images/195949888724.jpg",
+    "img": "itemshop/195949888724.jpg",
     "alt": "APPLE MacBook Air 13.6'' M4/24GB/512GB Silver (MC654GR/A)",
     "meta": "APPLE MacBook Air 13.6'' M4/24GB/512GB Silver (MC654GR/A)",
     "price": 1569
   },
 
   {
-    "title": "INTRA PC BUSINESS i3 12th GEN Desktop",
+    "title": "INTRA PC BUSINESS i3 12th GEN Υπολογιστής Desktop",
     "cat": "desktop",
     "sku": "0303112874 - 124567",
-    "img": "images/0303112874.jpg",
+    "img": "itemshop/0303112874.jpg",
     "alt": "INTRA PC BUSINESS i3 12th GEN Desktop",
     "meta": "Intel Core i3-12100, 8GB RAM, 500GB SSD, Windows 11 Home",
     "price": 499
   },
   {
-    "title": "INTRA PC BUSINESS i5 12th GEN Desktop",
+    "title": "INTRA PC AMD RYZEN 5 5500 GAMING Υπολογιστής Desktop",
     "cat": "desktop",
-    "sku": "0303112879 - 129973",
-    "img": "images/0303112879.jpg",
-    "alt": "INTRA PC BUSINESS i5 12th GEN Desktop",
-    "meta": "Intel Core i5-12400, 8GB RAM, 500GB SSD, Windows 11 Home",
-    "price": 519
+    "sku": "0303113383 - 139458",
+    "img": "itemshop/0303113383.jpg",
+    "alt": "INTRA PC AMD RYZEN 5 5500 GAMING Υπολογιστής Desktop",
+    "meta": "Σταθερός υπολογιστής με επεξεργαστή AMD Ryzen 5 στα 3.60GHz, με 16 GB μνήμη και 512 GB σκληρό δίσκο SSD.",
+    "price": 849
   },
-  {
-    "title": "INTRA PC BUSINESS i7 12th GEN Desktop",
-    "cat": "desktop",
-    "sku": "0303112880 - 129974",
-    "img": "images/0303112880.jpg",
-    "alt": "INTRA PC BUSINESS i7 12th GEN Desktop",
-    "meta": "Intel Core i7-12700, 16GB RAM, 1TB SSD, Windows 11 Home",
-    "price": 899
-  },
-  {
-    "title": "INTRA PC SFX BUSINESS R5 5600G Desktop",
-    "cat": "desktop",
-    "sku": "0303113031 - 131533",
-    "img": "images/0303113031.jpg",
-    "alt": "INTRA PC SFX BUSINESS R5 5600G Desktop",
-    "meta": "AMD Ryzen 5 5600G, 16GB RAM, 500GB SSD, Windows 11 Home",
-    "price": 649
-  },
-  {
-    "title": "ASUS ROG Strix GT15 Gaming Desktop",
-    "cat": "desktop",
-    "sku": "0195553911352 - 122151",
-    "img": "images/0195553911352.jpg",
-    "alt": "ASUS ROG Strix GT15 Gaming Desktop",
-    "meta": "Intel Core i5 σειράς 12ης γεν., 16GB RAM, 512GB SSD, NVIDIA GeForce",
-    "price": 1399
-  },
-
   {
     "title": "LOGITECH G102 Λευκό Gaming Ενσύρματο Ποντίκι",
     "cat": "pc-peripherals",
     "sku": "5099206089242 - 107410",
-    "img": "images/5099206089242.jpg",
+    "img": "itemshop/5099206089242.jpg",
     "alt": "LOGITECH G102 Λευκό Gaming Ενσύρματο Ποντίκι",
     "meta": "Ενσύρματο, έως 8.000 DPI, 1.000Hz, RGB",
     "price": 30
   },
   {
-    "title": "CONCEPTUM Black Dragon G901 Ενσύρματο Πληκτρολόγιο-Ποντίκι (Σετ 4-in-1)",
+    "title": "CONCEPTUM BLACK DRAGON G901 Ενσύρματο Πληκτρολόγιο-Ποντίκι",
     "cat": "pc-peripherals",
     "sku": "5200250812865 - 80145",
-    "img": "images/5200250812865.jpg",
+    "img": "itemshop/5200250812865.jpg",
     "alt": "CONCEPTUM Black Dragon G901 Ενσύρματο Πληκτρολόγιο-Ποντίκι (Σετ 4-in-1)",
     "meta": "Mechanical TKL πληκτρολόγιο, mouse, mousepad & headset, RGB",
     "price": 59
   },
   {
-    "title": "NGS GSX-150 Ηχεία Υπολογιστή",
-    "cat": "pc-peripherals",
-    "sku": "8435430619287 - 105724",
-    "img": "images/8435430619287.jpg",
-    "alt": "NGS GSX-150 Ηχεία Υπολογιστή",
-    "meta": "2.0 USB, 2×6W, LED RGB",
-    "price": 24
-  },
-  {
-    "title": "NGS MSX 103 Ακουστικά",
-    "cat": "pc-peripherals",
-    "sku": "8436001280455 - 93384",
-    "img": "images/8436001280455.jpg",
-    "alt": "NGS MSX 103 Ακουστικά",
-    "meta": "Ενσύρματα, βύσμα 3.5mm, in-line ένταση",
-    "price": 9
-  },
-  {
-    "title": "TRUST GXT 212 Mico Μικρόφωνο",
-    "cat": "pc-peripherals",
-    "sku": "8713439237917 - 119038",
-    "img": "images/8713439237917.jpg",
-    "alt": "TRUST GXT 212 Mico Μικρόφωνο",
-    "meta": "USB & 3.5mm, omnidirectional, τρίποδο",
-    "price": 25
-  },
-  {
-    "title": "NGS BUD-AC Σετ 4 Βύσματα Φόρτισης (USB-C → Acer)",
-    "cat": "pc-peripherals",
-    "sku": "8435430625141 - 145645",
-    "img": "images/8435430625141.jpg",
-    "alt": "NGS BUD-AC Σετ 4 Βύσματα Φόρτισης (USB-C → Acer)",
-    "meta": "Σετ αντάπτορων PD για φορητούς Acer (4 μεγέθη ακίδων)",
-    "price": 11
-  },
-
-  
-
-  {
-    "title": "APPLE IPHONE 15 128GB Κινητό Smartphone",
+    "title": "APPLE IPHONE 15 128GB Μαύρο Κινητό Smartphone",
     "cat": "mobile",
     "sku": "2111720264 - 131326",
-    "img": "images/2111720264.jpg",
+    "img": "itemshop/2111720264.jpg",
     "alt": "APPLE IPHONE 15 128GB Κινητό Smartphone",
     "meta": "6.1'' OLED, 128GB, iOS",
     "price": 769
   },
-  {
-    "title": "APPLE IPHONE 15 128GB Κινητό Smartphone",
-    "cat": "mobile",
-    "sku": "2111815780 - 131384",
-    "img": "images/2111815780.jpg",
-    "alt": "APPLE IPHONE 15 128GB Κινητό Smartphone",
-    "meta": "6.1'' OLED, 128GB, iOS",
-    "price": 769
-  },
-  {
-    "title": "APPLE IPHONE 15 PLUS 128GB Κινητό Smartphone",
-    "cat": "mobile",
-    "sku": "9348943057448 - 131341",
-    "img": "images/9348943057448.jpg",
-    "alt": "APPLE IPHONE 15 PLUS 128GB Κινητό Smartphone",
-    "meta": "6.7'' OLED, 128GB, iOS",
-    "price": 869
-  },
-  {
-    "title": "APPLE IPHONE 15 PLUS 256GB Κινητό Smartphone",
-    "cat": "mobile",
-    "sku": "7319925901129 - 131370",
-    "img": "images/7319925901129.jpg",
-    "alt": "APPLE IPHONE 15 PLUS 256GB Κινητό Smartphone",
-    "meta": "6.7'' OLED, 256GB, iOS",
-    "price": 1019
-  },
-  {
-    "title": "APPLE IPHONE 16 256GB Κινητό Smartphone",
+   {
+    "title": "APPLE IPHONE 16 256GB Λευκό Κινητό Smartphone",
     "cat": "mobile",
     "sku": "195949822971 - 137967",
-    "img": "images/195949822971.jpg",
+    "img": "itemshop/195949822971.jpg",
     "alt": "APPLE IPHONE 16 256GB Κινητό Smartphone",
     "meta": "6.3'' OLED, 256GB, iOS",
     "price": 1019
   },
-
   {
-    "title": "GIGASET A180 Ασύρματο Τηλέφωνο",
+    "title": "GIGASET AS690 Μαύρο Ασύρματο Τηλέφωνο",
     "cat": "fixed",
-    "sku": "4250366855592 - 120152",
-    "img": "images/4250366855592.jpg",
-    "alt": "GIGASET A180 Ασύρματο Τηλέφωνο",
-    "meta": "Ασύρματο DECT, οθόνη",
-    "price": 17.9
+    "sku": "4250366855011 - 94617",
+    "img": "itemshop/4250366855011.jpg",
+    "alt": "GIGASET AS690 Μαύρο Ασύρματο Τηλέφωνο",
+    "meta": "Με φωτιζόμενη οθόνη και πληκτρολόγιο και με τηλεφωνικό κατάλογο για έως και 100 καταχωρήσεις",
+    "price": 54.90
   },
   {
-    "title": "GIGASET AS690 Ασύρματο Τηλέφωνο",
+    "title": "GIGASET DESK 200 Μαύρο Σταθερό Τηλέφωνο",
     "cat": "fixed",
     "sku": "4250366846446 - 120144",
-    "img": "images/4250366846446.jpg",
-    "alt": "GIGASET AS690 Ασύρματο Τηλέφωνο",
-    "meta": "Ασύρματο DECT, μεγάφωνο",
+    "img": "itemshop/4250366846446.jpg",
+    "alt": "GIGASET DESK 200 Μαύρο Σταθερό Τηλέφωνο",
+    "meta": "Το Gigaset DESK 200 έχει ιδιαίτερα λεπτό και συμπαγή σχεδιασμό και μπορεί να τοποθετηθεί γρήγορα και εύκολα στον τοίχο",
     "price": 32.9
   },
-  {
-    "title": "GIGASET CL390 Ασύρματο Τηλέφωνο",
-    "cat": "fixed",
-    "sku": "4250366857862 - 108222",
-    "img": "images/4250366857862.jpg",
-    "alt": "GIGASET CL390 Ασύρματο Τηλέφωνο",
-    "meta": "Ασύρματο DECT, μεγάλη οθόνη",
-    "price": 29.9
-  },
-  {
-    "title": "GIGASET CL390 Ασύρματο Τηλέφωνο",
-    "cat": "fixed",
-    "sku": "4250366857848 - 108223",
-    "img": "images/4250366857848.jpg",
-    "alt": "GIGASET CL390 Ασύρματο Τηλέφωνο",
-    "meta": "Ασύρματο DECT, μεγάλη οθόνη",
-    "price": 29.9
-  },
-  {
-    "title": "GIGASET CL390 Ασύρματο Τηλέφωνο",
-    "cat": "fixed",
-    "sku": "4250366857879 - 108224",
-    "img": "images/4250366857879.jpg",
-    "alt": "GIGASET CL390 Ασύρματο Τηλέφωνο",
-    "meta": "Ασύρματο DECT, μεγάλη οθόνη",
-    "price": 29.9
-  },
-
-  {
+   {
     "title": "SAMSUNG Galaxy Watch 5 Pro Titanium (LTE) SmartWatch",
     "cat": "wearables",
     "sku": "8806094498486 - 117971",
-    "img": "images/8806094498486.jpg",
+    "img": "itemshop/8806094498486.jpg",
     "alt": "SAMSUNG Galaxy Watch 5 Pro Titanium (LTE) SmartWatch",
     "meta": "1.4'' Super AMOLED, LTE/GPS",
     "price": 499.9
@@ -297,59 +174,17 @@
   {
     "title": "APPLE WATCH Series 10 GPS 46mm Sport Band SmartWatch",
     "cat": "wearables",
-    "sku": "195949563720 - 137972",
-    "img": "images/195949563720.jpg",
-    "alt": "APPLE WATCH Series 10 GPS 46mm Sport Band SmartWatch",
-    "meta": "46mm OLED, GPS, 64GB",
-    "price": 489
-  },
-  {
-    "title": "APPLE WATCH Series 10 GPS 46mm Sport Loop SmartWatch",
-    "cat": "wearables",
-    "sku": "195949563768 - 137975",
-    "img": "images/195949563768.jpg",
-    "alt": "APPLE WATCH Series 10 GPS 46mm Sport Loop SmartWatch",
-    "meta": "46mm OLED, GPS, 64GB",
-    "price": 489
-  },
-  {
-    "title": "APPLE WATCH Series 10 GPS 46mm Sport Band SmartWatch",
-    "cat": "wearables",
     "sku": "195949563751 - 137974",
-    "img": "images/195949563751.jpg",
+    "img": "itemshop/195949563751.jpg",
     "alt": "APPLE WATCH Series 10 GPS 46mm Sport Band SmartWatch",
     "meta": "46mm OLED, GPS, 64GB",
     "price": 489
-  },
-  {
-    "title": "APPLE WATCH Series 10 GPS 46mm Sport Loop SmartWatch",
-    "cat": "wearables",
-    "sku": "195949563737 - 137973",
-    "img": "images/195949563737.jpg",
-    "alt": "APPLE WATCH Series 10 GPS 46mm Sport Loop SmartWatch",
-    "meta": "46mm OLED, GPS, 64GB",
-    "price": 489
-  },
-
-
-
-
-
-
-  {
-    "title": "MSI Cyborg 15 A13VE Gaming Laptop",
-    "cat": "pc",
-    "sku": "4711377190657 - 142906",
-    "img": "images/4711377190657.jpg",
-    "alt": "MSI Cyborg 15 A13VE Gaming Laptop",
-    "meta": "15.6'' FHD 1920x1080, Intel Core i7-13620H, 16GB RAM, 512GB SSD, GeForce RTX 3050 6GB, Windows 11",
-    "price": 989
   },
   {
     "title": "INTRA PC AMD Ryzen 5 5500 Gaming Desktop",
     "cat": "pc",
     "sku": "0303113383 - 139458",
-    "img": "images/0303113383.jpg",
+    "img": "itemshop/0303113383.jpg",
     "alt": "INTRA PC AMD Ryzen 5 5500 Gaming Desktop",
     "meta": "Ryzen 5 5500, 16GB RAM, 512GB SSD, Windows 11",
     "price": 849
@@ -358,63 +193,34 @@
     "title": "INTRA PC AMD Ryzen 7 5700X Gaming Desktop",
     "cat": "pc",
     "sku": "0303112869 - 124422",
-    "img": "images/0303112869.jpg",
+    "img": "itemshop/0303112869.jpg",
     "alt": "INTRA PC AMD Ryzen 7 5700X Gaming Desktop",
     "meta": "Ryzen 7 5700X, 16GB RAM, 512GB SSD, Windows 11",
     "price": 1399
   },
-  {
-    "title": "MSI MAG 27C6X 27'' Gaming Monitor",
-    "cat": "pc",
-    "sku": "4711377180078 - 141287",
-    "img": "images/4711377180078.jpg",
-    "alt": "MSI MAG 27C6X 27'' Gaming Monitor",
-    "meta": "27'' FHD 1920x1080, VA, 1ms, έως 250Hz, Adaptive-Sync, καμπύλη 1500R",
-    "price": 179
-  },
-
-  {
+    {
     "title": "EA FIFA 23 PS5 Game",
     "cat": "console",
     "sku": "5030943124377 - 117654",
-    "img": "images/5030943124377.jpg",
+    "img": "itemshop/5030943124377.jpg",
     "alt": "EA FIFA 23 PS5 Game",
     "meta": "Βιντεοπαιχνίδι για PS5",
     "price": 49.99
   },
   {
-    "title": "GIOTECK VX-4 Χειριστήριο",
+    "title": "GIOTECK VX-4 Μαύρο Χειριστήριο",
     "cat": "console",
     "sku": "0812313015950 - 101268",
-    "img": "images/0812313015950.jpg",
-    "alt": "GIOTECK VX-4 Χειριστήριο",
+    "img": "itemshop/0812313015950.jpg",
+    "alt": "GIOTECK VX-4 Μαύρο Χειριστήριο",
     "meta": "Ασύρματο χειριστήριο για PS4 και PC, Bluetooth",
     "price": 39.99
   },
-  {
-    "title": "GIOTECK VX-4 Χειριστήριο Ενσύρματο",
-    "cat": "console",
-    "sku": "0812313015745 - 101267",
-    "img": "images/0812313015745.jpg",
-    "alt": "GIOTECK VX-4 Χειριστήριο Ενσύρματο",
-    "meta": "Ενσύρματο χειριστήριο για PS4 και PC, καλώδιο 2,5m",
-    "price": 24.99
-  },
-  {
-    "title": "TRUST GXT232 MANTIS Μικρόφωνο",
-    "cat": "console",
-    "sku": "8713439226560 - 87622",
-    "img": "images/8713439226560.jpg",
-    "alt": "TRUST GXT232 MANTIS Μικρόφωνο",
-    "meta": "USB μικρόφωνο για streaming, συμβατό με PS4/PS5",
-    "price": 29.99
-  },
-
-  {
+    {
     "title": "NGS GHX-510 Gaming Headset",
     "cat": "gaming-peripherals",
     "sku": "8435430618235 - 95474",
-    "img": "images/8435430618235.jpg",
+    "img": "itemshop/8435430618235.jpg",
     "alt": "NGS GHX-510 Gaming Headset",
     "meta": "Headset με οδηγούς 40mm, μικρόφωνο, ενσύρματη σύνδεση",
     "price": 29.9
@@ -423,40 +229,16 @@
     "title": "NGS GMX-125 Gaming Ενσύρματο Ποντίκι",
     "cat": "gaming-peripherals",
     "sku": "8435430618020 - 105722",
-    "img": "images/8435430618020.jpg",
+    "img": "itemshop/8435430618020.jpg",
     "alt": "NGS GMX-125 Gaming Ενσύρματο Ποντίκι",
     "meta": "Ποντίκι gaming έως 7200 DPI, 8 προγραμματιζόμενα πλήκτρα",
     "price": 22.9
   },
   {
-    "title": "MSI MAG 32CQ6PF 32'' Gaming Monitor",
-    "cat": "gaming-peripherals",
-    "sku": "4711377219235 - 141514",
-    "img": "images/4711377219235.jpg",
-    "alt": "MSI MAG 32CQ6PF 32'' Gaming Monitor",
-    "meta": "32'' WQHD 2560x1440, VA, 0.5ms, 180Hz, HDR400, καμπύλη 1500R",
-    "price": 289
-  },
-  {
-    "title": "MSI MAG 27C6X 27'' Gaming Monitor",
-    "cat": "gaming-peripherals",
-    "sku": "4711377180078 - 141287",
-    "img": "images/4711377180078.jpg",
-    "alt": "MSI MAG 27C6X 27'' Gaming Monitor",
-    "meta": "27'' FHD 1920x1080, VA, 1ms, έως 250Hz, Adaptive-Sync, καμπύλη 1500R",
-    "price": 179
-  },
-
-
-  
-
-
-
-  {
     "title": "AUX ASW-H09B4/JKR3DI-EU J-SMART Inverter Κλιματιστικό",
     "cat": "ac",
     "sku": "0694853639861 - 97932",
-    "img": "images/0694853639861.jpg",
+    "img": "itemshop/0694853639861.jpg",
     "alt": "AUX ASW-H09B4/JKR3DI-EU J-SMART Inverter Κλιματιστικό",
     "meta": "9.000 BTU, Inverter, λειτουργίες αυτοκαθαρισμού & χρονοδιακόπτη, χαμηλή στάθμη θορύβου",
     "price": 479
@@ -465,44 +247,16 @@
     "title": "AUX ASW-H12B4/FREE-EU Freedom Inverter Κλιματιστικό",
     "cat": "ac",
     "sku": "4982971917186 - 111222",
-    "img": "images/4982971917186.jpg",
+    "img": "itemshop/4982971917186.jpg",
     "alt": "AUX ASW-H12B4/FREE-EU Freedom Inverter Κλιματιστικό",
     "meta": "12.000 BTU, Inverter, προστασία διαρροών, αυτοκαθαρισμός, χρονοδιακόπτης",
     "price": 479
   },
-  {
-    "title": "AUX ASW-H12B4/JKR3DI-EU J-SMART Inverter Κλιματιστικό",
-    "cat": "ac",
-    "sku": "0694853639885 - 97936",
-    "img": "images/0694853639885.jpg",
-    "alt": "AUX ASW-H12B4/JKR3DI-EU J-SMART Inverter Κλιματιστικό",
-    "meta": "12.000 BTU, Inverter, λειτουργία σε ακραίες συνθήκες, υψηλή απόδοση",
-    "price": 529
-  },
-  {
-    "title": "AUX ASW-H18B4/JKR3DI-EU J-SMART Inverter Κλιματιστικό",
-    "cat": "ac",
-    "sku": "0694853639908 - 97938",
-    "img": "images/0694853639908.jpg",
-    "alt": "AUX ASW-H18B4/JKR3DI-EU J-SMART Inverter Κλιματιστικό",
-    "meta": "18.000 BTU, Inverter, υψηλή ενεργειακή απόδοση και αξιοπιστία",
-    "price": 899
-  },
-  {
-    "title": "AUX ASW-H24B4/FREE-EU Freedom Inverter Κλιματιστικό",
-    "cat": "ac",
-    "sku": "3521381570120 - 111917",
-    "img": "images/3521381570120.jpg",
-    "alt": "AUX ASW-H24B4/FREE-EU Freedom Inverter Κλιματιστικό",
-    "meta": "24.000 BTU, Inverter, λειτουργίες αυτοκαθαρισμού & χρονοδιακόπτη",
-    "price": 999
-  },
-
-  {
+   {
     "title": "HOOVER HHP50CAH011 Καθαριστής Αέρα",
     "cat": "air-care",
     "sku": "8059019052672 - 111063",
-    "img": "images/8059019052672.jpg",
+    "img": "itemshop/8059019052672.jpg",
     "alt": "HOOVER HHP50CAH011 Καθαριστής Αέρα",
     "meta": "HEPA H13, καθαρισμός αέρα για μεγάλους χώρους, λειτουργίες χρονοδιακόπτη/νύχτας",
     "price": 329
@@ -511,95 +265,34 @@
     "title": "Inventor QLT-300 Καθαριστής Αέρα",
     "cat": "air-care",
     "sku": "5213008582316 - 83900",
-    "img": "images/5213008582316.jpg",
+    "img": "itemshop/5213008582316.jpg",
     "alt": "Inventor QLT-300 Καθαριστής Αέρα",
     "meta": "Καθαριστής αέρα έως ~20m², φίλτρα πολλαπλών σταδίων, αθόρυβη λειτουργία",
     "price": 149
   },
-  {
-    "title": "Inventor QLT-500 Καθαριστής Αέρα",
-    "cat": "air-care",
-    "sku": "5213008582323 - 83901",
-    "img": "images/5213008582323.jpg",
-    "alt": "Inventor QLT-500 Καθαριστής Αέρα",
-    "meta": "Καθαριστής αέρα έως ~35m², πολλαπλά φίλτρα, ένδειξη ποιότητας αέρα",
-    "price": 199
-  },
-  {
-    "title": "Inventor QLT-700 Καθαριστής Αέρα",
-    "cat": "air-care",
-    "sku": "5213008582330 - 83902",
-    "img": "images/5213008582330.jpg",
-    "alt": "Inventor QLT-700 Καθαριστής Αέρα",
-    "meta": "Καθαριστής αέρα για μεγαλύτερους χώρους, φίλτρο HEPA, χρονοδιακόπτης",
-    "price": 249
-  },
-  {
-    "title": "DELONGHI AC75 Ιονιστής Αέρα",
-    "cat": "air-care",
-    "sku": "8004399325328 - 98143",
-    "img": "images/8004399325328.jpg",
-    "alt": "DELONGHI AC75 Ιονιστής Αέρα",
-    "meta": "Ιονιστής/καθαριστής αέρα με φίλτρα πολλαπλών σταδίων, αθόρυβη λειτουργία",
-    "price": 159
-  },
-
-  {
-    "title": "DELONGHI DDSX225 Αφυγραντήρας 25L",
+    {
+    "title": "DELONGHI DDSX225 Αφυγραντήρας",
     "cat": "dehumid",
-    "sku": "8004399552564 - 103372",
-    "img": "images/8004399552564.jpg",
-    "alt": "DELONGHI DDSX225 Αφυγραντήρας 25L",
-    "meta": "25L/ημέρα, κατάλληλος για μεγάλους χώρους, λειτουργία στεγνώματος ρούχων",
+    "sku": "8004399481114 - 83154",
+    "img": "itemshop/8004399481114.jpg",
+    "alt": "DELONGHI DDSX225 Αφυγραντήρας",
+    "meta": "Μέγιστη ροή αέρα 195m3/ώρα , θερμοκρασίες λειτουργίας 2 30oC. Μεγάλη χωρητικότητα δοχείου νερού: 5 lt",
     "price": 329
   },
-  {
-    "title": "DELONGHI DEXD 216F Αφυγραντήρας 16L",
+   {
+    "title": "DELONGHI DEXD 216F Αφυγραντήρας",
     "cat": "dehumid",
-    "sku": "8004399552069 - 111790",
-    "img": "images/8004399552069.jpg",
-    "alt": "DELONGHI DEXD 216F Αφυγραντήρας 16L",
-    "meta": "16L/ημέρα, φίλτρο κατά των αλλεργιογόνων, αθόρυβη λειτουργία",
-    "price": 219
+    "sku": "8004399007666 - 92037",
+    "img": "itemshop/8004399007666.jpg",
+    "alt": "DELONGHI DEXD 216F Αφυγραντήρας",
+    "meta": "Απομακρύνετε έως και 16 L επιπλέον υγρασίας σε 24 ώρες. Χωρητικότητα δεξαμενής νερού: 2.1 l",
+    "price": 239
   },
-  {
-    "title": "DELONGHI DNS 65 Αφυγραντήρας 16L",
-    "cat": "dehumid",
-    "sku": "8004399552038 - 111747",
-    "img": "images/8004399552038.jpg",
-    "alt": "DELONGHI DNS 65 Αφυγραντήρας 16L",
-    "meta": "Τεχνολογία ζεόλιθου, ιδανικός για χαμηλές θερμοκρασίες, συνεχής αποχέτευση",
-    "price": 199
-  },
-  {
-    "title": "Inventor Atmosphere XL AT-IONUV-25L Αφυγραντήρας",
-    "cat": "dehumid",
-    "sku": "5213008580657 - 114014",
-    "img": "images/5213008580657.jpg",
-    "alt": "Inventor Atmosphere XL AT-IONUV-25L Αφυγραντήρας",
-    "meta": "25L/ημέρα, ιονιστής & UV, Wi-Fi, ιδανικός για μεγάλους χώρους",
-    "price": 379
-  },
-  {
-    "title": "Inventor Eva II Pro Wi-Fi 20L (CB-WUI-20L) Αφυγραντήρας",
-    "cat": "dehumid",
-    "sku": "5213008580671 - 114016",
-    "img": "images/5213008580671.jpg",
-    "alt": "Inventor Eva II Pro Wi-Fi 20L (CB-WUI-20L) Αφυγραντήρας",
-    "meta": "20L/ημέρα, Wi-Fi, αθόρυβος, λειτουργία στεγνώματος ρούχων",
-    "price": 249
-  },
-
-
-
-
-
-
-  {
+    {
     "title": "BEKO RDNE350K40XBN Ψυγείο",
     "cat": "fridge",
     "sku": "8690842678059 - 141973",
-    "img": "images/8690842678059.jpg",
+    "img": "itemshop/8690842678059.jpg",
     "alt": "BEKO RDNE350K40XBN Ψυγείο",
     "meta": "Δίπορτο, περίπου 316 L, No Frost, LED φωτισμός",
     "price": 569
@@ -608,144 +301,52 @@
     "title": "BOSCH KSV36VWEP Ψυγείο",
     "cat": "fridge",
     "sku": "4242002938100 - 128776",
-    "img": "images/4242002938100.jpg",
+    "img": "itemshop/4242002938100.jpg",
     "alt": "BOSCH KSV36VWEP Ψυγείο",
     "meta": "Μονόπορτο, περίπου 346 L, αυτόματη απόψυξη, SuperCooling",
     "price": 869
   },
-  {
-    "title": "ESKIMO ES RTF436NEIN Ψυγείο",
-    "cat": "fridge",
-    "sku": "5203821222375 - 93463",
-    "img": "images/5203821222375.jpg",
-    "alt": "ESKIMO ES RTF436NEIN Ψυγείο",
-    "meta": "Δίπορτο, περίπου 304 L, No Frost, γυάλινα ράφια",
-    "price": 449
-  },
-  {
-    "title": "HISENSE RL481N4BIE Ψυγείο",
-    "cat": "fridge",
-    "sku": "6921727062265 - 133525",
-    "img": "images/6921727062265.jpg",
-    "alt": "HISENSE RL481N4BIE Ψυγείο",
-    "meta": "Μονόπορτο, περίπου 386 L, Multi Airflow, LED",
-    "price": 549
-  },
-  {
-    "title": "HISENSE RR220D4ADF Ψυγείο",
-    "cat": "fridge",
-    "sku": "6943619833124 - 132924",
-    "img": "images/6943619833124.jpg",
-    "alt": "HISENSE RR220D4ADF Ψυγείο",
-    "meta": "Μονόπορτο, περίπου 164 L, ρυθμιζόμενα ράφια",
-    "price": 299
-  },
-  {
+   {
     "title": "MIELE WTR870WPM Πλυντήριο-Στεγνωτήριο",
     "cat": "wash-dry",
-    "sku": "4002516273451 - 135491",
-    "img": "images/4002516273451.jpg",
+    "sku": "4002516591481 - 135846",
+    "img": "itemshop/4002516591481.jpg",
     "alt": "MIELE WTR870WPM Πλυντήριο-Στεγνωτήριο",
     "meta": "Συνδυαστικό πλυντήριο-στεγνωτήριο με πολλά προγράμματα και τεχνολογίες φροντίδας ρούχων",
     "price": 2499
   },
   {
-    "title": "MIELE WTD160 WCS Πλυντήριο-Στεγνωτήριο",
-    "cat": "wash-dry",
-    "sku": "4002516388506 - 138068",
-    "img": "images/4002516388506.jpg",
-    "alt": "MIELE WTD160 WCS Πλυντήριο-Στεγνωτήριο",
-    "meta": "Συνδυαστικό πλυντήριο-στεγνωτήριο με εύχρηστα χειριστήρια και ποικιλία προγραμμάτων",
-    "price": 1699
-  },
-  {
     "title": "LG D4R9513TPBC Πλυντήριο-Στεγνωτήριο",
     "cat": "wash-dry",
-    "sku": "8806091648587 - 108946",
-    "img": "images/8806091648587.jpg",
+    "sku": "8806084294135 - 132452",
+    "img": "itemshop/8806084294135.jpg",
     "alt": "LG D4R9513TPBC Πλυντήριο-Στεγνωτήριο",
     "meta": "Συνδυαστικό πλυντήριο-στεγνωτήριο με εξελιγμένα προγράμματα και λειτουργίες",
     "price": 1339
   },
-  {
-    "title": "BOSCH WKD28543EU Πλυντήριο-Στεγνωτήριο",
-    "cat": "wash-dry",
-    "sku": "4242005383511 - 107466",
-    "img": "images/4242005383511.jpg",
-    "alt": "BOSCH WKD28543EU Πλυντήριο-Στεγνωτήριο",
-    "meta": "Συνδυαστικό πλυντήριο-στεγνωτήριο με αξιόπιστη απόδοση και προγράμματα εξοικονόμησης",
-    "price": 1299
-  },
-  {
-    "title": "LG D4R7511TSBB Πλυντήριο-Στεγνωτήριο",
-    "cat": "wash-dry",
-    "sku": "8806091668882 - 122204",
-    "img": "images/8806091668882.jpg",
-    "alt": "LG D4R7511TSBB Πλυντήριο-Στεγνωτήριο",
-    "meta": "Συνδυαστικό πλυντήριο-στεγνωτήριο με ποικιλία γρήγορων και καθημερινών προγραμμάτων",
-    "price": 1119
-  },
-
-  {
-    "title": "GRUPPE I-28TTFL Φουρνάκι",
+   {
+    "title": "GRUPPE I-28TTFL Κόκκινο Φουρνάκι",
     "cat": "cooktops",
-    "sku": "5206684083093 - 138163",
-    "img": "images/5206684083093.jpg",
+    "sku": "5206684083093 - 138111",
+    "img": "itemshop/5206684083093.jpg",
     "alt": "GRUPPE I-28TTFL Φουρνάκι",
     "meta": "Φουρνάκι πάγκου με λειτουργία αέρα, χρονόμετρο και διπλό τζάμι",
     "price": 139.9
-  },
-  {
-    "title": "GRUPPE I-28TTFL Φουρνάκι",
-    "cat": "cooktops",
-    "sku": "5206684083109 - 138165",
-    "img": "images/5206684083109.jpg",
-    "alt": "GRUPPE I-28TTFL Φουρνάκι",
-    "meta": "Φουρνάκι πάγκου με λειτουργία αέρα, χρονόμετρο και διπλό τζάμι",
-    "price": 139.9
-  },
-  {
-    "title": "GRUPPE I-30TTFL Φουρνάκι",
-    "cat": "cooktops",
-    "sku": "5206684083154 - 138164",
-    "img": "images/5206684083154.jpg",
-    "alt": "GRUPPE I-30TTFL Φουρνάκι",
-    "meta": "Φουρνάκι πάγκου με ρυθμιζόμενο θερμοστάτη και λειτουργίες ψησίματος",
-    "price": 149.9
-  },
-  {
-    "title": "GRUPPE I-30TTFL Φουρνάκι",
-    "cat": "cooktops",
-    "sku": "5206684083161 - 138166",
-    "img": "images/5206684083161.jpg",
-    "alt": "GRUPPE I-30TTFL Φουρνάκι",
-    "meta": "Φουρνάκι πάγκου με ρυθμιζόμενο θερμοστάτη και λειτουργίες ψησίματος",
-    "price": 149.9
   },
   {
     "title": "LIFE 302 Φουρνάκι",
     "cat": "cooktops",
     "sku": "5207172002176 - 88099",
-    "img": "images/5207172002176.jpg",
+    "img": "itemshop/5207172002176.jpg",
     "alt": "LIFE 302 Φουρνάκι",
     "meta": "30 L, 5 λειτουργίες ψησίματος, διπλό τζάμι πόρτας",
     "price": 119
-  },
-
-  {
-    "title": "INVENTOR MWO-20LS Φούρνος Μικροκυμάτων",
-    "cat": "microwave",
-    "sku": "5213008582354 - 84883",
-    "img": "images/5213008582354.jpg",
-    "alt": "INVENTOR MWO-20LS Φούρνος Μικροκυμάτων",
-    "meta": "700 W, 20 L, 6 προγράμματα",
-    "price": 89
   },
   {
     "title": "INVENTOR MWO-20LW Φούρνος Μικροκυμάτων",
     "cat": "microwave",
     "sku": "5213008582361 - 84884",
-    "img": "images/5213008582361.jpg",
+    "img": "itemshop/5213008582361.jpg",
     "alt": "INVENTOR MWO-20LW Φούρνος Μικροκυμάτων",
     "meta": "700 W, 20 L, 6 προγράμματα",
     "price": 79
@@ -754,197 +355,88 @@
     "title": "INVENTOR MWO-28L-BD Φούρνος Μικροκυμάτων",
     "cat": "microwave",
     "sku": "5213008583900 - 90217",
-    "img": "images/5213008583900.jpg",
+    "img": "itemshop/5213008583900.jpg",
     "alt": "INVENTOR MWO-28L-BD Φούρνος Μικροκυμάτων",
     "meta": "900 W, 28 L, 21 προγράμματα",
     "price": 229
   },
-  {
-    "title": "INVENTOR MWO-AF-27LT-BD Φούρνος Μικροκυμάτων",
-    "cat": "microwave",
-    "sku": "5213013882890 - 140670",
-    "img": "images/5213013882890.jpg",
-    "alt": "INVENTOR MWO-AF-27LT-BD Φούρνος Μικροκυμάτων",
-    "meta": "1550 W, Grill 900 W, 27 L, Air Fryer, 28 προγράμματα",
-    "price": 249
-  },
-  {
+   {
     "title": "WINSTAR WSTFSIXC6519 Κουζίνα Ελεύθερη",
     "cat": "cookers",
     "sku": "WSTFSIXC6519WINSTAR - 85095",
-    "img": "images/WSTFSIXC6519WINSTAR.jpg",
+    "img": "itemshop/WSTFSIXC6519WINSTAR.jpg",
     "alt": "WINSTAR WSTFSIXC6519 Κουζίνα Ελεύθερη",
     "meta": "69 L φούρνος, 4 κεραμικές εστίες, Ενεργειακή κλάση A, 9 τρόποι ψησίματος, ρολόι",
     "price": 499
   },
-  {
-    "title": "WINSTAR WSTFSWC6519 Κουζίνα Ελεύθερη",
-    "cat": "cookers",
-    "sku": "WSTFSWC6519WINSTAR - 85099",
-    "img": "images/WSTFSWC6519WINSTAR.jpg",
-    "alt": "WINSTAR WSTFSWC6519 Κουζίνα Ελεύθερη",
-    "meta": "69 L φούρνος, 4 κεραμικές εστίες, Ενεργειακή κλάση A, 9 τρόποι ψησίματος, ρολόι",
-    "price": 449
-  },
-  {
+    {
     "title": "WINSTAR WSTFS6519 Κουζίνα Ελεύθερη",
     "cat": "cookers",
     "sku": "WSTFS6519WINSTAR - 83392",
-    "img": "images/WSTFS6519WINSTAR.jpg",
+    "img": "itemshop/WSTFS6519WINSTAR.jpg",
     "alt": "WINSTAR WSTFS6519 Κουζίνα Ελεύθερη",
     "meta": "69 L φούρνος, 4 εμαγιέ εστίες, Ενεργειακή κλάση A, 9 τρόποι ψησίματος",
     "price": 333
   },
-  {
-    "title": "ESKIMO ES 4060 W Κουζίνα Ελεύθερη",
-    "cat": "cookers",
-    "sku": "8690842405334 - 91654",
-    "img": "images/8690842405334.jpg",
-    "alt": "ESKIMO ES 4060 W Κουζίνα Ελεύθερη",
-    "meta": "71 L φούρνος, 4 εμαγιέ εστίες, 4 λειτουργίες, Ενεργειακή κλάση A",
-    "price": 329
-  },
-  {
-    "title": "ESKIMO ES 4020 W Κουζίνα Ελεύθερη",
-    "cat": "cookers",
-    "sku": "8690842838224 - 56579",
-    "img": "images/8690842838224.jpg",
-    "alt": "ESKIMO ES 4020 W Κουζίνα Ελεύθερη",
-    "meta": "72 L φούρνος, 4 εμαγιέ εστίες, 7 λειτουργίες + απόψυξη, Ενεργειακή κλάση A",
-    "price": 399
-  },
-
-
-
-  
-  
-  
-  {
+   {
     "title": "AEG AB51C1DB Ηλεκτρική Σκούπα",
     "cat": "vacuum",
-    "sku": "7332543801497 - 87072",
-    "img": "images/7332543801497.jpg",
+    "sku": "7333394022116 - 134236",
+    "img": "itemshop/7333394022116.jpg",
     "alt": "AEG AB51C1DB Ηλεκτρική Σκούπα",
     "meta": "Ισχύς 650W, ένδειξη αλλαγής σακούλας, ρυθμιζόμενη ισχύς",
     "price": 99
   },
   {
-    "title": "AEG AB61C1OG Ηλεκτρική Σκούπα",
-    "cat": "vacuum",
-    "sku": "7332543801510 - 87074",
-    "img": "images/7332543801510.jpg",
-    "alt": "AEG AB61C1OG Ηλεκτρική Σκούπα",
-    "meta": "Ισχύς 750W, ακροφύσιο για στενές κοιλότητες, υψηλή απορρόφηση",
-    "price": 149
-  },
-  {
-    "title": "AEG AL31C1DG Ηλεκτρική Σκούπα",
-    "cat": "vacuum",
-    "sku": "7332543807208 - 99886",
-    "img": "images/7332543807208.jpg",
-    "alt": "AEG AL31C1DG Ηλεκτρική Σκούπα",
-    "meta": "Ισχύς 850W, μαλακές ρόδες, αποδοτικό φιλτράρισμα",
-    "price": 99
-  },
-  {
-    "title": "AEG LX5-2-4T Ηλεκτρική Σκούπα",
-    "cat": "vacuum",
-    "sku": "7332543529208 - 68583",
-    "img": "images/7332543529208.jpg",
-    "alt": "AEG LX5-2-4T Ηλεκτρική Σκούπα",
-    "meta": "Χωρίς σακούλα, φίλτρο υγιεινής, εύκολη συντήρηση",
-    "price": 109
-  },
-  {
-    "title": "HOOVER BR71_BR30011 Ηλεκτρική Σκούπα",
+    "title": "HOOVER BR71 BR30011 Ηλεκτρική Σκούπα",
     "cat": "vacuum",
     "sku": "8016361945824 - 22391",
-    "img": "images/8016361945824.jpg",
+    "img": "itemshop/8016361945824.jpg",
     "alt": "HOOVER BR71_BR30011 Ηλεκτρική Σκούπα",
     "meta": "Χωρίς σακούλα, κυκλωνική τεχνολογία, ελαφριά",
     "price": 79
   },
-
   {
-    "title": "AEG SI7-1-4WB Σίδερο Ατμού",
+    "title": "AEG DB1730 Σίδερο Ατμού",
     "cat": "ironing",
-    "sku": "7333394010488 - 56954",
-    "img": "images/7333394010488.jpg",
-    "alt": "AEG SI7-1-4WB Σίδερο Ατμού",
+    "sku": "7332543575671 - 71971",
+    "img": "itemshop/7332543575671.jpg",
+    "alt": "AEG DB1730 Σίδερο Ατμού",
     "meta": "Ισχυρή παροχή ατμού, αντικατά των αλάτων, στάλα-στοπ",
-    "price": 80
+    "price": 26.40
   },
   {
     "title": "BRAUN SI3041GR Σίδερο Ατμού",
     "cat": "ironing",
     "sku": "8021098270672 - 75257",
-    "img": "images/8021098270672.jpg",
+    "img": "itemshop/8021098270672.jpg",
     "alt": "BRAUN SI3041GR Σίδερο Ατμού",
     "meta": "Freeglide 3D Superceramic, ισχύς 2350W, δοχείο 270ml, σύστημα κατά των αλάτων",
     "price": 46
   },
-  {
-    "title": "BRAUN SI3053BL Σίδερο Ατμού",
-    "cat": "ironing",
-    "sku": "8021098270696 - 75792",
-    "img": "images/8021098270696.jpg",
-    "alt": "BRAUN SI3053BL Σίδερο Ατμού",
-    "meta": "Freeglide 3D Superceramic, ρυθμίσεις Eco/Normal/Turbo, δοχείο 270ml",
-    "price": 52
-  },
-
-  {
+   {
     "title": "AEG CM3-1-3ST Καφετιέρα Φίλτρου",
     "cat": "beverages",
     "sku": "7332543971213 - 135190",
-    "img": "images/7332543971213.jpg",
+    "img": "itemshop/7332543971213.jpg",
     "alt": "AEG CM3-1-3ST Καφετιέρα Φίλτρου",
     "meta": "Ισχύς 1000W, έως 10 φλιτζάνια, αυτόματη απενεργοποίηση",
     "price": 49
   },
-  {
-    "title": "AEG CM5-1-6ST Καφετιέρα Φίλτρου",
-    "cat": "beverages",
-    "sku": "7332543837816 - 117828",
-    "img": "images/7332543837816.jpg",
-    "alt": "AEG CM5-1-6ST Καφετιέρα Φίλτρου",
-    "meta": "Ισχύς 1000W, έως 10 φλιτζάνια, αφαιρούμενη θήκη φίλτρου",
-    "price": 59
-  },
-  {
+   {
     "title": "BRAUN KF3120BK Καφετιέρα Φίλτρου",
     "cat": "beverages",
     "sku": "8021098320148 - 82850",
-    "img": "images/8021098320148.jpg",
+    "img": "itemshop/8021098320148.jpg",
     "alt": "BRAUN KF3120BK Καφετιέρα Φίλτρου",
     "meta": "AromaCarafe για διατήρηση θερμοκρασίας/αρώματος, πρακτική κανάτα",
     "price": 60
   },
-  {
-    "title": "MOULINEX FG1211 Καφετιέρα Φίλτρου",
-    "cat": "beverages",
-    "sku": "3016661149719 - 75745",
-    "img": "images/3016661149719.jpg",
-    "alt": "MOULINEX FG1211 Καφετιέρα Φίλτρου",
-    "meta": "Κανάτα 1,1L έως 12 φλιτζάνια, αυτόματη απενεργοποίηση, anti-drip",
-    "price": 43.9
-  },
-  {
-    "title": "MOULINEX FT36081 Καφετιέρα Φίλτρου",
-    "cat": "beverages",
-    "sku": "3045386369515 - 49739",
-    "img": "images/3045386369515.jpg",
-    "alt": "MOULINEX FT36081 Καφετιέρα Φίλτρου",
-    "meta": "Θερμική κανάτα, αυτόματη απενεργοποίηση, ευκολία σερβιρίσματος",
-    "price": 96.9
-  },
-
-
-  {
+    {
     "title": "SINGER MADAM 2 Ραπτομηχανή",
     "cat": "sewing",
     "sku": "7393033095703 - 84164",
-    "img": "images/7393033095703.jpg",
+    "img": "itemshop/7393033095703.jpg",
     "alt": "SINGER MADAM 2 Ραπτομηχανή",
     "meta": "23 βελονιές, ισχύς 85W",
     "price": 349
@@ -953,212 +445,29 @@
     "title": "SINGER Prelude 1408 Ραπτομηχανή",
     "cat": "sewing",
     "sku": "3700394502315 - 125479",
-    "img": "images/3700394502315.jpg",
+    "img": "itemshop/3700394502315.jpg",
     "alt": "SINGER Prelude 1408 Ραπτομηχανή",
     "meta": "8 είδη βελονιών, ισχύς 85W",
     "price": 179
   },
   {
-    "title": "SINGER PROMISE 1412 Ραπτομηχανή",
-    "cat": "sewing",
-    "sku": "0374318843742 - 108593",
-    "img": "images/0374318843742.jpg",
-    "alt": "SINGER PROMISE 1412 Ραπτομηχανή",
-    "meta": "70W, ποικιλία ραφών, κουμπότρυπα",
-    "price": 229
-  },
-  {
-    "title": "SINGER SUPERA 5523 Ραπτομηχανή",
-    "cat": "sewing",
-    "sku": "0374318830193 - 44539",
-    "img": "images/0374318830193.jpg",
-    "alt": "SINGER SUPERA 5523 Ραπτομηχανή",
-    "meta": "23 βελονιές, 90W, κουμπότρυπα 1 βήματος",
-    "price": 399
-  },
-
-
-
-
-
-
-  {
-    "title": "SoMime Absolute 4XL Infrared & Ion Ισιωτικό Μαλλιών",
-    "cat": "women",
-    "sku": "5200010009283 - 132876",
-    "img": "images/5200010009283.jpg",
-    "alt": "SoMime Absolute 4XL Infrared & Ion Ισιωτικό Μαλλιών",
-    "meta": "Ισιωτικό με κεραμικές πλάκες, υπέρυθρη & ιονική τεχνολογία, έως 230°C.",
-    "price": 139
-  },
-  {
-    "title": "SoMime STEAM CERAMIC & KERATIN Ισιωτικό Μαλλιών",
-    "cat": "women",
-    "sku": "5200010010753 - 132873",
-    "img": "images/5200010010753.jpg",
-    "alt": "SoMime STEAM CERAMIC & KERATIN Ισιωτικό Μαλλιών",
-    "meta": "Ισιωτικό ατμού με επίστρωση κερατίνης/κεραμική και ρύθμιση θερμοκρασίας.",
-    "price": 89.9
-  },
-  {
     "title": "IMETEC myPRO CERAMIC P5 3800 Σεσουάρ",
     "cat": "women",
-    "sku": "8007403120269 - 138246",
-    "img": "images/8007403120269.jpg",
+    "sku": "8007403116651 - 75842",
+    "img": "itemshop/8007403116651.jpg",
     "alt": "IMETEC myPRO CERAMIC P5 3800 Σεσουάρ",
     "meta": "Σεσουάρ 2100W με κεραμική τεχνολογία για ομοιόμορφη θερμότητα και φροντίδα.",
-    "price": 76.9
+    "price": 90.90
   },
   {
-    "title": "PHILIPS BRE225/00 Αποτριχωτική Μηχανή",
+    "title": "IMETEC BELLISSIMA Absolute 4XL Infrared & Ion Ισιωτική Μαλλιών",
     "cat": "women",
     "sku": "8710103843962 - 113161",
-    "img": "images/8710103843962.jpg",
-    "alt": "PHILIPS BRE225/00 Αποτριχωτική Μηχανή",
-    "meta": "Συσκευή αποτρίχωσης με 2 ταχύτητες και αποσπώμενη κεφαλή για εύκολο καθάρισμα.",
+    "img": "itemshop/8710103843962.jpg",
+    "alt": "IMETEC BELLISSIMA Absolute 4XL Infrared & Ion Ισιωτική Μαλλιών",
+    "meta": "Επαγγελματικό ισιωτικό μαλλιών με πλάκες 4XL και τεχνολογία υπερύθρων και ιόντων για απόλυτα ίσια, προστατευμένα μαλλιά στο μισό χρόνο.",
     "price": 34.9
-  },
-  {
-    "title": "PHILIPS Lumea BRI920/00 Μόνιμη Αποτρίχωση IPL",
-    "cat": "women",
-    "sku": "8710103933649 - 114057",
-    "img": "images/8710103933649.jpg",
-    "alt": "PHILIPS Lumea BRI920/00 Μόνιμη Αποτρίχωση IPL",
-    "meta": "Σύστημα IPL για μείωση τριχοφυΐας με οδηγό χρήσης και εξάρτημα ακριβείας.",
-    "price": 199
-  },
-
-  {
-    "title": "PHILIPS BT3206/14 Κοπτική Μηχανή",
-    "cat": "men",
-    "sku": "8710103844044 - 138206",
-    "img": "images/8710103844044.jpg",
-    "alt": "PHILIPS BT3206/14 Κοπτική Μηχανή",
-    "meta": "Trimmer για γένια με 10 ρυθμίσεις 0.5–10mm και αυτονομία έως 45’.",
-    "price": 24.9
-  },
-  {
-    "title": "IZZY SK200 Ξυριστική Μηχανή",
-    "cat": "men",
-    "sku": "8798887834338 - 137146",
-    "img": "images/8798887834338.jpg",
-    "alt": "IZZY SK200 Ξυριστική Μηχανή",
-    "meta": "Ξυριστική με κυκλική κεφαλή και μεγάλη αυτονομία μπαταρίας.",
-    "price": 35
-  },
-  {
-    "title": "PHILIPS BG3017/01 Ξυριστική Μηχανή",
-    "cat": "men",
-    "sku": "8720689020510 - 134276",
-    "img": "images/8720689020510.jpg",
-    "alt": "PHILIPS BG3017/01 Ξυριστική Μηχανή",
-    "meta": "Bodygroom Series 3000 για σώμα, απαλή περιποίηση, αδιάβροχη κατασκευή.",
-    "price": 39.9
-  },
-  {
-    "title": "PHILIPS BG3027/05 Ξυριστική Μηχανή",
-    "cat": "men",
-    "sku": "8720689020534 - 134278",
-    "img": "images/8720689020534.jpg",
-    "alt": "PHILIPS BG3027/05 Ξυριστική Μηχανή",
-    "meta": "Bodygroom με 3 χτένες (2/3/5mm) και αυτονομία έως 60’.",
-    "price": 59
-  },
-
-  {
-    "title": "PHILIPS SCF291/00 Αποστειρωτής Μπιμπερό",
-    "cat": "kids",
-    "sku": "8710103951339 - 132037",
-    "img": "images/8710103951339.jpg",
-    "alt": "PHILIPS SCF291/00 Αποστειρωτής Μπιμπερό",
-    "meta": "Αποστειρωτής μπιμπερό για έως 6 τεμάχια, κύκλος 10', εξουδετέρωση 99,9% μικροβίων",
-    "price": 99
-  },
-  {
-    "title": "PHILIPS SCF293/00 Αποστειρωτής Μπιμπερό",
-    "cat": "kids",
-    "sku": "8710103941620 - 131667",
-    "img": "images/8710103941620.jpg",
-    "alt": "PHILIPS SCF293/00 Αποστειρωτής Μπιμπερό",
-    "meta": "Αποστειρωτής & στεγνωτήρας μπιμπερό, στεγνώνει με φιλτραρισμένο αέρα, έως 6 τεμάχια",
-    "price": 108.9
-  },
-  {
-    "title": "PHILIPS SCF355/09 Θερμαντήρας Μπιμπερό",
-    "cat": "kids",
-    "sku": "8710103654810 - 117894",
-    "img": "images/8710103654810.jpg",
-    "alt": "PHILIPS SCF355/09 Θερμαντήρας Μπιμπερό",
-    "meta": "Θερμαντήρας μπιμπερό, γρήγορο ζέσταμα ~3', ρύθμιση απόψυξης, κατάλληλος για βρεφική τροφή",
-    "price": 37.99
-  },
-  {
-    "title": "PHILIPS SCF358/00 Θερμαντήρας Μπιμπερό",
-    "cat": "kids",
-    "sku": "8710103923084 - 143469",
-    "img": "images/8710103923084.jpg",
-    "alt": "PHILIPS SCF358/00 Θερμαντήρας Μπιμπερό",
-    "meta": "Έξυπνος έλεγχος θερμοκρασίας για ομοιόμορφο ζέσταμα, εύκολη χρήση",
-    "price": 59.9
-  },
-  {
-    "title": "PHILIPS SCF870/20 Παρασκευαστής Βρεφικής Τροφής",
-    "cat": "kids",
-    "sku": "8710103472575 - 32621",
-    "img": "images/8710103472575.jpg",
-    "alt": "PHILIPS SCF870/20 Παρασκευαστής Βρεφικής Τροφής",
-    "meta": "Συσκευή 2-σε-1: ατμομάγειρας & μπλέντερ με ηχητική ειδοποίηση ολοκλήρωσης",
-    "price": 159.99
-  },
-
-  {
-    "title": "ORAL B VITALITY CROSSACTION Οδοντόβουρτσα",
-    "cat": "wellness",
-    "sku": "4210201402053 - 106947",
-    "img": "images/4210201402053.jpg",
-    "alt": "ORAL B VITALITY CROSSACTION Οδοντόβουρτσα",
-    "meta": "Επαναφορτιζόμενη οδοντόβουρτσα 2D δράσης, χρονόμετρο 2' με ειδοποίηση ανά 30s",
-    "price": 35
-  },
-  {
-    "title": "PHILIPS HX3651/11 Οδοντόβουρτσα",
-    "cat": "wellness",
-    "sku": "8710103985471 - 130537",
-    "img": "images/8710103985471.jpg",
-    "alt": "PHILIPS HX3651/11 Οδοντόβουρτσα",
-    "meta": "Sonic τεχνολογία, αφαίρεση πλάκας έως 3x, SmarTimer & QuadPacer",
-    "price": 34.9
-  },
-  {
-    "title": "PHILIPS HX3651/12 Οδοντόβουρτσα",
-    "cat": "wellness",
-    "sku": "8710103985488 - 130268",
-    "img": "images/8710103985488.jpg",
-    "alt": "PHILIPS HX3651/12 Οδοντόβουρτσα",
-    "meta": "Sonic τεχνολογία, αφαίρεση πλάκας έως 3x, SmarTimer & QuadPacer",
-    "price": 39.9
-  },
-  {
-    "title": "PHILIPS HX3651/13 Οδοντόβουρτσα",
-    "cat": "wellness",
-    "sku": "8710103985501 - 130269",
-    "img": "images/8710103985501.jpg",
-    "alt": "PHILIPS HX3651/13 Οδοντόβουρτσα",
-    "meta": "Sonic τεχνολογία, αφαίρεση πλάκας έως 3x, SmarTimer & QuadPacer",
-    "price": 34.9
-  },
-  {
-    "title": "PHILIPS HX3671/13 Οδοντόβουρτσα",
-    "cat": "wellness",
-    "sku": "8710103985570 - 117896",
-    "img": "images/8710103985570.jpg",
-    "alt": "PHILIPS HX3671/13 Οδοντόβουρτσα",
-    "meta": "Sonic τεχνολογία με αισθητήρα πίεσης, SmarTimer & QuadPacer",
-    "price": 47.9
   }
 ]
-
-
-
 
 
