@@ -544,6 +544,38 @@
     "alt": "PHILIPS SCF293/00 Αποστειρωτής Μπιμπερό",
     "meta": "Αποστειρωτής & στεγνωτήρας μπιμπερό, στεγνώνει με φιλτραρισμένο αέρα, έως 6 τεμάχια",
     "price": 108.9
+  },
+
+
+
+
+
+  {
+    "title": "PHILIPS HX3651/12 Οδοντόβουρτσα",
+    "cat": "wellness",
+    "sku": "8710103985488 - 130268",
+    "img": "itemshop/8710103985488.jpg",
+    "alt": "PHILIPS HX3651/12 Οδοντόβουρτσα",
+    "meta": "Sonic τεχνολογία, αφαίρεση πλάκας έως 3x, SmarTimer & QuadPacer",
+    "price": 39.9
+  },
+  {
+    "title": "PHILIPS HX3651/13 Οδοντόβουρτσα",
+    "cat": "wellness",
+    "sku": "8710103985501 - 130269",
+    "img": "itemshop/8710103985501.jpg",
+    "alt": "PHILIPS HX3651/13 Οδοντόβουρτσα",
+    "meta": "Sonic τεχνολογία, αφαίρεση πλάκας έως 3x, SmarTimer & QuadPacer",
+    "price": 34.9
+  },
+  {
+    "title": "PHILIPS HX3671/13 Οδοντόβουρτσα",
+    "cat": "wellness",
+    "sku": "8710103985570 - 117896",
+    "img": "itemshop/8710103985570.jpg",
+    "alt": "PHILIPS HX3671/13 Οδοντόβουρτσα",
+    "meta": "Sonic τεχνολογία με αισθητήρα πίεσης, SmarTimer & QuadPacer",
+    "price": 47.9
   }
 ]
 
